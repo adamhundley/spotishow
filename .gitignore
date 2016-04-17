@@ -13,3 +13,5 @@
 /tmp
 # Ignore test coverage files from SimpleCov
 /coverage
+# Ignore application configuration
+/config/application.yml
