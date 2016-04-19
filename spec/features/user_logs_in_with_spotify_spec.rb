@@ -12,10 +12,9 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
 
   scenario "User visits the root and logs in with spotify credintials" do
       visit "/"
+      click_on "login-button"
 
-      click_on "Login with Spotify"
-
-      expect(page).to have_content "Welcome to Spoitshow, Adam Hundley!"
+      expect(page).to have_content "Welcome Adam Hundley"
       expect(User.count).to eq 1
   end
 end
