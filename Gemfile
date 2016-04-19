@@ -10,6 +10,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'codeclimate-test-reporter', group: :test, require: nil
+gem 'omniauth-spotify'
+gem 'omniauth'
+gem 'omniauth-oauth2', '~> 1.3.1'
+gem 'oauth2'
+
 group :development, :test do
   gem 'pry-rails'
   gem 'byebug'
