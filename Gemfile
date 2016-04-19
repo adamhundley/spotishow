@@ -12,6 +12,7 @@ gem 'figaro'
 gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'omniauth-spotify'
 gem 'omniauth'
+gem 'rails_12factor', group: :production
 gem 'omniauth-oauth2', '~> 1.3.1'
 gem 'oauth2'
 
@@ -35,4 +36,6 @@ end
 
 group :test do
   gem 'simplecov', require: false
+  gem 'vcr'
+  gem 'webmock'
 end

@@ -1,9 +1,4 @@
 require 'rails_helper'
-require "support/authentication"
-
-RSpec.configure do |c|
-  c.include Authentication
-end
 
 RSpec.feature "UserLogsInWithSpotify", type: :feature do
   before(:each) do
