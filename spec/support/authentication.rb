@@ -18,7 +18,7 @@ module Authentication
         token: "token",
         refresh_token: 1461029417
       },
-      extras: {
+      extra: {
         raw_info: {
           href: "https://api.spotify.com/v1/users/adamhundley"
         }
