@@ -9,7 +9,8 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
       visit "/"
       click_on "login-button"
 
-      expect(page).to have_content "Welcome Adam Hundley"
+      expect(page).to have_content "Welcome to Spotishow, Adam Hundley!"
       expect(User.count).to eq 1
+      expect(current_path).to eq "/adamhundley/dashboard"
   end
 end
