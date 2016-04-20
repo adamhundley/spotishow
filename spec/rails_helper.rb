@@ -5,25 +5,7 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
-# Add additional requires below this line. Rails is not loaded until this point!
 
-# Requires supporting ruby files with custom matchers and macros, etc, in
-# spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
-# run as spec files by default. This means that files in spec/support that end
-# in _spec.rb will both be required and run as specs, causing the specs to be
-# run twice. It is recommended that you do not name files matching this glob to
-# end with _spec.rb. You can configure this pattern with the --pattern
-# option on the command line or in ~/.rspec, .rspec or `.rspec-local`.
-#
-# The following line is provided for convenience purposes. It has the downside
-# of increasing the boot-up time by auto-requiring all files in the support
-# directory. Alternatively, in the individual `*_spec.rb` files, manually
-# require only the support files necessary.
-#
-# Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
-
-# Checks for pending migration and applies them before tests are run.
-# If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
@@ -110,7 +92,7 @@ def stub_omniauth
       image: "https://scontent.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p200x200/12049656_10100204503401754_3715087154579945830_n.jpg?oh=f7d96813ab87b164df6f41f4265d7d7b&oe=57B548E1"
     },
     credentials: {
-      token: "BQAatGFNcWu94Pl6tocmybhNVG_bOqTU2gVZLnANYtrhMGXQ7w5813RNn4rQGmCmmjzPR-lr6Dgx9bF8Axd4NVtwwwIE_8HidXlS0kPkOxnH_P6zyuydglcS-Qz92UJAapGoFwO6KMvRZO9YhE5roSL8",
+      token: "BQD0TisYLoBh0rljjsbjLiGJgywAeExut07y3tOtWCFojBs2pDjfymqL4D0gQW3fCcTTtfvunl2mtT9NJjQVhCvDW0NWhiPlOkgJo0ZmyliSiSPmRPl7j-3NfGZYEjx95ET4FjfFiBreoz5H2HyGp7Iy",
       refresh_token: 1461029417
     },
     extra: {
