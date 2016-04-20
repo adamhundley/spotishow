@@ -1,0 +1,51 @@
+table {
+        width: 100%;
+    }
+
+
+thead.artists, tbody.artists-body, tr.artists, td.artists, th.artists { display: block; }
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+thead th {
+    height: 50px;
+    /*text-align: left;*/
+}
+
+tbody {
+    height: 700px;
+    overflow-y: auto;
+}
+
+thead {
+  /* fallback */
+}
+
+tbody td.artist-images, thead th.artist-images {
+  width: 10%;
+  float: left;
+}
+
+tbody td.artist-name, thead th.artist-name {
+  width: 50%;
+  float: left;
+}
+
+tbody td.artist-facebook, thead th.artist-facebook {
+  width: 15%;
+  float: left;
+}
+tbody td.spotify, thead th.spotify {
+  width: 15%;
+  float: left;
+}
+
+tbody td.artist-untrack, thead th.artist-untrack {
+  width: 10%;
+  float: left;
+}
