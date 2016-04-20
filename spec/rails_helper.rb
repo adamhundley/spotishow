@@ -110,7 +110,7 @@ def stub_omniauth
       image: "https://scontent.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p200x200/12049656_10100204503401754_3715087154579945830_n.jpg?oh=f7d96813ab87b164df6f41f4265d7d7b&oe=57B548E1"
     },
     credentials: {
-      token: "token",
+      token: "BQAatGFNcWu94Pl6tocmybhNVG_bOqTU2gVZLnANYtrhMGXQ7w5813RNn4rQGmCmmjzPR-lr6Dgx9bF8Axd4NVtwwwIE_8HidXlS0kPkOxnH_P6zyuydglcS-Qz92UJAapGoFwO6KMvRZO9YhE5roSL8",
       refresh_token: 1461029417
     },
     extra: {

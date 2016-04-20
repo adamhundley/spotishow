@@ -11,10 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160419003414) do
+ActiveRecord::Schema.define(version: 20160420044451) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "artists", force: :cascade do |t|
+    t.string   "name"
+    t.string   "spotify_id"
+    t.string   "spotify_uri"
+    t.integer  "spotify_popularity"
+    t.string   "spotify_image_url"
+    t.string   "bit_image_url"
+    t.string   "website"
+    t.string   "facebook_url"
+    t.string   "facebook_tour_url"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "user_artists", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "artist_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "user_artists", ["artist_id"], name: "index_user_artists_on_artist_id", using: :btree
+  add_index "user_artists", ["user_id"], name: "index_user_artists_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
@@ -31,4 +55,6 @@ ActiveRecord::Schema.define(version: 20160419003414) do
     t.datetime "updated_at",    null: false
   end
 
+  add_foreign_key "user_artists", "artists"
+  add_foreign_key "user_artists", "users"
 end

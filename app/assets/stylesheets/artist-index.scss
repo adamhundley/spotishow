@@ -1,0 +1,32 @@
+.listen-on-spotify {
+  height: 30px;
+  width: auto;
+}
+
+.artist-image {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.artist-name {
+  font-size: 2em;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.artist-table-background {
+  background-image:url('https://images.unsplash.com/photo-1448485780098-7e0b78781fc1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2ea407699fa46e846cb1cf58dcb9c34b');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height:100%;
+  margin-top: -135px;
+  position: absolute;;
+}
+
+.artist-table {
+  margin-top: 120px;
+}
