@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
   def create
     user = User.from_omniauth(request.env["omniauth.auth"])
+    user.update_token
     session[:uid] = user.uid
     flash[:success] = "Welcome to Spotishow, #{current_user.name}!"
     redirect_to user_dashboard_path(current_user.uid)

@@ -15,6 +15,17 @@ class SpotifyService
       parse(response.body)[:items]
   end
 
+  def request_new_token(user)
+    hash = { grant_type: "refresh_token", refresh_token: user.refresh_token}
+    encoded_auth = Base64.strict_encode64("#{apikey}:#{secret}")
+    response = Faraday.new("https://accounts.spotify.com/api/token").post do |req|
+      req.headers['Authorization'] = "Basic #{encoded_auth}"
+      req.body = hash
+    end
+    parse(response.body)
+  end
+
+
 private
 
   def connection
@@ -23,6 +34,10 @@ private
 
   def apikey
     @_apikey
+  end
+
+  def secret
+    @_secret
   end
 
   def parse(response)

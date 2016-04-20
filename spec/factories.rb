@@ -1,8 +1,23 @@
 FactoryGirl.define do
+  factory :user_artist do
+    user nil
+    artist nil
+  end
+  factory :artist do
+    name "John Mayer"
+    spotify_id "MyString"
+    spotify_uri "MyString"
+    spotify_popularity 1
+    spotify_image_url "MyString"
+    bit_image_url "MyString"
+    website "MyString"
+    facebook_url "MyString"
+    facebook_tour_url "MyString"
+  end
   factory :user do
-    email "MyString"
-    uid "MyString"
-    name "MyString"
+    email "adamhundley@gmail.com"
+    uid "adamhundley"
+    name "Adam Hundley"
     nickname "MyString"
     spotify "MyString"
     image "MyString"
