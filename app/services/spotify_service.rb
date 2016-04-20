@@ -25,7 +25,6 @@ class SpotifyService
     parse(response.body)
   end
 
-
 private
 
   def connection
@@ -43,5 +42,4 @@ private
   def parse(response)
     JSON.parse(response, symbolize_names: true)
   end
-
 end
