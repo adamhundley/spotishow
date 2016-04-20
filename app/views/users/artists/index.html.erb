@@ -1,21 +1,24 @@
 <div class="artist-table-background">
 
 <div class="container artist-table">
-  <table class="table">
-    <thead>
-        <th></th>
-        <th class="artist shows">Artist</th>
-        <th class="location shows">Tour</th>
-        <th class="tickets shows"><%= image_tag("listen-on-spotify.png", class:"listen-on-spotify") %></th>
+  <table class="table artists">
+    <thead class="artists">
+      <tr class="artists">
+        <th class="artists artist-images"></th>
+        <th class="artists artist-name">Artist</th>
+        <th class="artists artist-facebook">Tour</th>
+        <th class="artists spotify"><%= image_tag("listen-on-spotify.png", class:"listen-on-spotify") %></th>
+        <th class="artists artist-untrack">untrack</th>
+      </tr>
     </thead>
-    <tbody>
+    <tbody class="artists-body">
       <% @artists.each do |artist| %>
-      <tr class="shows">
-        <td class="artist-image"><%= image_tag(artist.spotify_image_url, class:"artist-image") %></td>
+      <tr class="artists">
+        <td class="artists artist-images"><%= image_tag(artist.spotify_image_url, class:"artist-image") %></td>
         <td class="artist-name"><%= artist.name %></td>
-        <td class="location shows"><%= artist.facebook_url %></td>
-        <td class="tickets shows"><%= link_to image_tag("listen-on-spotify.png", class:"listen-on-spotify"), artist.spotify_uri %></td>
-        <td>
+        <td class="artists artist-facebook"><%= link_to image_tag("live.png", class:"live"), artist.facebook_url %></td>
+        <td class="artists spotify"><%= link_to image_tag("listen-on-spotify.png", class:"listen-on-spotify"), artist.spotify_uri %></td>
+        <td class="artists artists-untrack">
           <button type="button" name="button" class="btn btn-danger btn-md">untrack</button>
         </td>
       </tr>
