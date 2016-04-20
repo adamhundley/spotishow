@@ -1,0 +1,34 @@
+<nav role="navigation container" class="navbar navbar-default custom-navbar">
+  <div class="nav-container container">
+    <div class="navbar-header pull-left">
+      <span><a class="logo-link" href="<%= user_dashboard_path(current_user.uid) %>"><%= image_tag("logo.png", class:"logo-img") %><span class="biz-name">
+      Spotishow</span></a></span>
+    </div>
+
+    <div class="navbar-nav pull-right">
+      <ul>
+        <li class="dropdown pull-right current-user-dropdown">
+          <a href="#" data-toggle="dropdown" style="color:#777; margin-top: 5px;" class="dropdown-toggle"><%= image_tag current_user.image, class:"current-user-image user-name" %><span class="user-name">
+          <%= current_user.uid %></span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+<%= link_to "my dashboard", user_dashboard_path(current_user.uid) %>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span><%= link_to "my artists", user_artists_path(current_user.uid) %>
+            </li>
+            <li>
+              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><%= link_to "my shows", user_shows_path(current_user.uid) %>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li>
+              <i class="glyphicon glyphicon-log-out" aria-hidden="true"></i>
+              <%= link_to "logout", logout_path, method: :delete %>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

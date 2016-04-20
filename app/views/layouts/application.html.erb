@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <%= favicon_link_tag 'logo.png' %>
   <title>Spotishow</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= csrf_meta_tags %>
@@ -8,9 +9,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <% flash.each do |type, message| %>
-        <%= content_tag :div, sanitize(message), class: "alert alert_#{type}" %>
+  <% if current_user %>
+    <%= render partial: "shared/navbar" %>
+
+    <% flash.each do |type, message| %>
+      <%= content_tag :div, sanitize(message), class: "alert alert_#{type}" %>
+    <% end %>
+  <% else %>
+    <% flash.each do |type, message| %>
+      <%= content_tag :div, sanitize(message), class: "alert alert_#{type}" %>
+    <% end %>
   <% end %>
+
+
 
 <%= yield %>
 

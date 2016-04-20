@@ -1,0 +1,44 @@
+.logo-img {
+  width: 55px;
+  height: auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.current-user-image {
+  width: 55px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 7%;
+}
+
+.current-user-dropdown {
+  list-style-type: none;
+}
+
+.custom-navbar {
+  background-color: rgba(0,0,0, .4);
+  border: none;
+  z-index: 1;
+}
+
+.dropdown-toggle a {
+  text-decoration: none;
+}
+
+.user-name {
+  font-size: 1.5em;
+  color: white;
+  margin-left: 7px;
+}
+
+.biz-name{
+  color: white;
+  font-size: 1.5em;
+}
+
+.caret {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
