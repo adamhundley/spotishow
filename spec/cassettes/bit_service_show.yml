@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.bandsintown.com/artists/Lord%20Huron/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 21 Apr 2016 17:01:06 GMT
+      Etag:
+      - '"34b0b94acc030f183a8288f4369f29b2"'
+      Server:
+      - nginx
+      X-Runtime:
+      - '29'
+      Content-Length:
+      - '1652'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        [{"id":11280250,"title":"Lord Huron @ Red Rocks Amphitheatre in Morrison, CO","datetime":"2016-08-11T19:00:00","formatted_datetime":"Thursday, August 11, 2016 at 7:00PM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11280250/buy_tickets?app_id=making_the_band\u0026artist=Lord+Huron\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-01-29T10:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11280250?app_id=making_the_band\u0026artist=Lord+Huron\u0026came_from=67","description":null,"artists":[{"name":"Lord Huron","mbid":null,"image_url":"https://s3.amazonaws.com/bit-photos/large/6044171.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/6044171.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/LordHuron/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/lordhuron","tracker_count":123216,"url":"LordHuron","website":null},{"name":"Trampled by Turtles","mbid":"c6a5a49b-9885-42e6-9fb5-ccaaec05f753","image_url":"https://s3.amazonaws.com/bit-photos/artistLarge.jpg","thumb_url":"https://s3.amazonaws.com/bit-photos/artistThumb.jpg","facebook_tour_dates_url":"http://www.bandsintown.com/TrampledByTurtles/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/TrampledByTurtles","tracker_count":131869,"url":"TrampledByTurtles","website":"http://www.msplinks.com/MDFodHRwOi8vd3d3LnRyYW1wbGVkYnl0dXJ0bGVzLmNvbQ=="}],"venue":{"name":"Red Rocks Amphitheatre","place":"Red Rocks Amphitheatre","city":"Morrison","region":"CO","country":"United States","latitude":39.665619,"longitude":-105.205165}}]
+    http_version: 
+  recorded_at: Thu, 21 Apr 2016 17:01:06 GMT
+recorded_with: VCR 3.0.1

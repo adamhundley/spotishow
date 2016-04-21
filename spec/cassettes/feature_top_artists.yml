@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer BQD0TisYLoBh0rljjsbjLiGJgywAeExut07y3tOtWCFojBs2pDjfymqL4D0gQW3fCcTTtfvunl2mtT9NJjQVhCvDW0NWhiPlOkgJo0ZmyliSiSPmRPl7j-3NfGZYEjx95ET4FjfFiBreoz5H2HyGp7Iy
+      - Bearer BQBcb9gpiulwmu-H1aehBMsBDom7Gdlr395TdBzKF7Qk_Nz5IzNyKGDl-KBXsS-fnKCK3dtPUldfY8foijndGQ8UgRwby5ulflJdFg3VWp2aWmODp_Dwi9weS9eFEL5aokZMUOI1Xw6KEX7TdSuqjviU
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 20 Apr 2016 21:43:31 GMT
+      - Thu, 21 Apr 2016 16:39:24 GMT
       Content-Type:
       - application/json; charset=UTF8
       Transfer-Encoding:
@@ -1132,11 +1132,11 @@ http_interactions:
         OiA3OSwKICAgICJ0eXBlIiA6ICJhcnRpc3QiLAogICAgInVyaSIgOiAic3Bv
         dGlmeTphcnRpc3Q6NkZCRGFSMTNzd3RpV3dHaFgxV1FzUCIKICB9IF0sCiAg
         InRvdGFsIiA6IDUwLAogICJsaW1pdCIgOiA1MCwKICAib2Zmc2V0IiA6IDAs
-        CiAgImhyZWYiIDogImh0dHBzOi8vYXBpLnNwb3RpZnkuY29tL3YxL21lL3Rv
-        cC9hcnRpc3RzP2xpbWl0PTUwJnRpbWVfcmFuZ2U9bG9uZ190ZXJtIiwKICAi
-        cHJldmlvdXMiIDogbnVsbCwKICAibmV4dCIgOiBudWxsCn0=
+        CiAgInByZXZpb3VzIiA6IG51bGwsCiAgImhyZWYiIDogImh0dHBzOi8vYXBp
+        LnNwb3RpZnkuY29tL3YxL21lL3RvcC9hcnRpc3RzP2xpbWl0PTUwJnRpbWVf
+        cmFuZ2U9bG9uZ190ZXJtIiwKICAibmV4dCIgOiBudWxsCn0=
     http_version: 
-  recorded_at: Wed, 20 Apr 2016 21:43:31 GMT
+  recorded_at: Thu, 21 Apr 2016 16:39:24 GMT
 - request:
     method: post
     uri: https://f3d2ac08aac547b6b9e97663236da32d:04284d8b4054405bb3dea49378b0baed@accounts.spotify.com/api/token
@@ -1160,7 +1160,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 20 Apr 2016 21:43:32 GMT
+      - Thu, 21 Apr 2016 16:39:24 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -1173,5 +1173,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"invalid_grant","error_description":"Invalid refresh token"}'
     http_version: 
-  recorded_at: Wed, 20 Apr 2016 21:43:32 GMT
+  recorded_at: Thu, 21 Apr 2016 16:39:24 GMT
 recorded_with: VCR 3.0.1

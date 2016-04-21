@@ -15,6 +15,7 @@ gem 'omniauth'
 gem 'rails_12factor', group: :production
 gem 'omniauth-oauth2', '~> 1.3.1'
 gem 'oauth2'
+gem 'responders'
 
 group :development, :test do
   gem 'pry-rails'

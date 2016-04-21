@@ -1,0 +1,6 @@
+<% @shows.each do |show| %>
+  <%= show.artist_name %> @ <%= show.venue_name %>
+  <%= show.formatted_datetime  %>
+  <%= show.formatted_location  %>
+  <br>
+<% end %>

@@ -1,4 +1,19 @@
 FactoryGirl.define do
+  factory :user_show do
+    user nil
+    show nil
+  end
+  factory :show do
+    bit_id 1
+    datetime "2016-04-20 17:19:13"
+    formatted_datetime "MyString"
+    formatted_location "MyString"
+    ticket_url "MyString"
+    facebook_rsvp_url "MyString"
+    venue_name "MyString"
+    venue_latitude 1.5
+    venue_longitude 1.5
+  end
   factory :user_artist do
     user nil
     artist nil
