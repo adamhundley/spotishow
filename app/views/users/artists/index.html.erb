@@ -13,15 +13,15 @@
     </thead>
     <tbody class="artists-body">
       <% @artists.each do |artist| %>
-      <tr class="artists">
-        <td class="artists artist-images"><%= image_tag(artist.spotify_image_url, class:"artist-image") %></td>
-        <td class="artist-name"><%= artist.name %></td>
-        <td class="artists artist-facebook"><%= link_to image_tag("live.png", class:"live"), artist.facebook_url %></td>
-        <td class="artists spotify"><%= link_to image_tag("listen-on-spotify.png", class:"listen-on-spotify"), artist.spotify_uri %></td>
-        <td class="artists artists-untrack">
-          <button type="button" name="button" class="btn btn-danger btn-md">untrack</button>
-        </td>
-      </tr>
+          <tr class="artists" id="artist-<%= artist.id %>">
+            <td class="artists artist-images"><%= image_tag(artist.spotify_image_url, class:"artist-image") %></td>
+            <td class="artist-name"><%= artist.name %></td>
+            <td class="artists artist-facebook"><%= link_to image_tag("live.png", class:"live"), artist.facebook_url %></td>
+            <td class="artists spotify"><%= link_to image_tag("listen-on-spotify.png", class:"listen-on-spotify"), artist.spotify_uri %></td>
+            <td class="artists artists-untrack">
+              <button type="button" name="button" class="btn btn-danger btn-md">untrack</button>
+            </td>
+          </tr>
       <% end %>
     </tbody>
   </table>

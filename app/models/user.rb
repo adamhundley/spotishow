@@ -1,7 +1,9 @@
 class User < ActiveRecord::Base
   validates :uid, uniqueness: true
   has_many :user_artists
+  has_many :user_shows
   has_many :artists, through: :user_artists
+  has_many :shows, through: :user_shows
 
   def self.from_omniauth(auth_info)
     where(uid: auth_info[:uid]).first_or_create do |new_user|
@@ -16,6 +18,7 @@ class User < ActiveRecord::Base
       new_user.refresh_token = auth_info[:credentials][:refresh_token]
       new_user.token_expire  = auth_info[:credentials][:expires_at]
       UserArtistCreator.new(new_user)
+      # UserShowCreator.new(new_user)
     end
   end
 
