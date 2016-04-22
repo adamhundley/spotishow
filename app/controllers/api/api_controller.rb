@@ -4,9 +4,12 @@ module Api
     respond_to :json
 
     def location
-      # session[:latitude] = params[:lat]
-      # session[:longitude] = params[:lng]
-      current_user.update(latitude: params[:lat], longitude: params[:lng])
+      if current_user
+        current_user.update(latitude: params[:lat], longitude: params[:lng])
+      else
+        session[:latitude] = params[:lat]
+        session[:longitude] = params[:lng]
+      end
       head :no_content
     end
   end

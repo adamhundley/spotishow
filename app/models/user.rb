@@ -5,6 +5,18 @@ class User < ActiveRecord::Base
   has_many :artists, through: :user_artists
   has_many :shows, through: :user_shows
 
+  reverse_geocoded_by :latitude, :longitude do |obj,results|
+    if geo = results.first
+      obj.location    = "#{geo.city}, #{geo.state_code}"
+    end
+  end
+
+  geocoded_by :location
+  after_validation :geocode
+  after_validation :reverse_geocode,
+    :if => lambda{ |obj| obj.location_changed? }
+
+
   def self.from_omniauth(auth_info)
     where(uid: auth_info[:uid]).first_or_create do |new_user|
       new_user.uid           = auth_info.uid

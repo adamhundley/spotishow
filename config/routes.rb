@@ -7,10 +7,13 @@ Rails.application.routes.draw do
     post '/location', to: "api#location"
   end
 
+  # resources :user, only: :update, param: :user_name
+
   namespace :users, path: ":user_name", as: :user do
     get "/dashboard", action: "show", as: :dashboard
     get "/artists", to: "artists#index", as: :artists
     get "/shows", to: "shows#index", as: :shows
+    patch "/", action: "update", params: :id
   end
 
   get "/auth/spotify", as: :spotify_login
