@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160421042123) do
+ActiveRecord::Schema.define(version: 20160421174954) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -80,6 +80,7 @@ ActiveRecord::Schema.define(version: 20160421042123) do
     t.datetime "updated_at",    null: false
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "location"
   end
 
   add_foreign_key "user_artists", "artists"

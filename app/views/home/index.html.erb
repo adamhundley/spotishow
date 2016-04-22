@@ -1,1 +1,18 @@
 <%= render partial: "shared/non_logged_in_home" %>
+
+<script>
+  if(window.attachEvent) {
+      window.attachEvent('onload', getLocation);
+  } else {
+      if(window.onload) {
+          var curronload = window.onload;
+          var newonload = function(evt) {
+              curronload(evt);
+              getLocation(evt);
+          };
+          window.onload = newonload;
+      } else {
+          window.onload = getLocation;
+      }
+  }
+</script>

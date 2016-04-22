@@ -14,3 +14,22 @@
 //= require jquery_ujs
 //= require_tree .
 //= require bootstrap-sprockets
+
+$( document).ready(function() {
+
+  function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(sendLocation);
+    } else {
+        console.log("Geolocation is not supported by this browser.");
+    }
+  }
+
+  function sendLocation(position) {
+    $.post('/api/location', {lat:position.coords.latitude, lng:position.coords.longitude});
+  }
+
+  $('.locationIcon').on('click', getLocation())
+  
+
+});

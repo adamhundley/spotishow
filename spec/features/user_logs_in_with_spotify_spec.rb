@@ -12,5 +12,8 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
       expect(page).to have_content "Welcome to Spotishow, Adam Hundley!"
       expect(User.count).to eq 1
       expect(current_path).to eq "/adamhundley/dashboard"
+      expect(page).to have_content "Current Location:"
+      expect(page).to have_content "Tracked Artist:"
+      expect(page).to have_content "Upcoming Shows:"
   end
 end

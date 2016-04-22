@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
+  <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+
 </head>
 <body>
   <% if current_user %>
@@ -20,7 +24,6 @@
       <%= content_tag :div, sanitize(message), class: "alert alert_#{type}" %>
     <% end %>
   <% end %>
-
 
 
 <%= yield %>

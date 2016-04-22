@@ -1,34 +1,32 @@
-<%= render partial: "shared/current_user_home" %>
+<div class="artist-dashboard-background">
+  <div class="container dashboard-container">
+    <div class="col-sm-4 text-center">
+      <span class="dashboard-text">my location</span><br>
+      <span class="dashboard-text">
+        <%= current_user.location.upcase if current_user.location %></span><br>
+        <%= link_to image_tag("update-location.png", class:"locationIcon"), "#"%>
+    </div>
+    <div class="col-sm-4 text-center">
+      <span class="dashboard-text">my artists</span><br>
+      <div id="odometer" class="odometer">0</div>
 
+      <script type="text/javascript">
+        setTimeout(function(){
+        odometer.innerHTML = <%= current_user.artists.count %>;
+      }, 500);
+      </script>
 
+    </div>
+    <div class="col-sm-4 text-center">
+      <span class="dashboard-text">my shows</span><br>
 
-<script>
-  if(window.attachEvent) {
-      window.attachEvent('onload', getLocation);
-  } else {
-      if(window.onload) {
-          var curronload = window.onload;
-          var newonload = function(evt) {
-              curronload(evt);
-              getLocation(evt);
-          };
-          window.onload = newonload;
-      } else {
-          window.onload = getLocation;
-      }
-  }
+      <div id="shodometer" class="odometer">0</div>
+        <script type="text/javascript">
+          setTimeout(function(){
+          shodometer.innerHTML = <%= current_user.shows.count %>;
+        }, 500);
+        </script>
 
-var x = document.getElementById("demo");
-
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(sendLocation);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-function sendLocation(position) {
-    $.post('/api/location', {lat:position.coords.latitude, lng:position.coords.longitude});
-      }
-</script>
+    </div>
+  </div>
+</div>
