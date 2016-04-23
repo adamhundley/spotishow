@@ -14,6 +14,7 @@ class UserShowCreator
     shows.map do |show|
       new_show = Show.find_or_create_by(
                     bit_id: show.first[:id].to_i,
+                    title: show.first[:title],
                     datetime: show.first[:datetime].to_date,
                     formatted_datetime: show.first[:formatted_datetime],
                     formatted_location: show.first[:formatted_location],
