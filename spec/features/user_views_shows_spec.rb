@@ -4,6 +4,7 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
   before(:each) do
     @user = User.create(uid: "adamhundley", latitude: 39.7392, longitude: -104.9903)
     @user.artists << Artist.create(name: "Lord Huron")
+    @user.shows << Show.cre
   end
 
   describe "User visits the root and logs in with spotify credintials and views their shows" do
