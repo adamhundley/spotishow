@@ -26,11 +26,7 @@ class BitService
 private
 
   def location(user)
-    if user.latitude
-      "#{user.latitude},#{user.longitude}"
-    else
-      "use_geoip"
-    end
+    "#{user.latitude},#{user.longitude}"
   end
 
   def connection

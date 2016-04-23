@@ -30,6 +30,13 @@ $( document).ready(function() {
   }
 
   $('.locationIcon').on('click', getLocation())
-  
 
+  $('#login-button').click(function() {
+    $('#login-button').hide();
+    $('.welcome-text').hide();
+    $.get('/api/shows')
+  });
+  $('#login-button').click(function() {
+    $('.spinner').show();
+  });
 });

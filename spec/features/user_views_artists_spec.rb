@@ -15,6 +15,7 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
       mayer = Artist.find_by(name: "John Mayer")
       rector = Artist.find_by(name:"Ben Rector")
       huron = Artist.find_by(name: "Lord Huron")
+      require "pry"; binding.pry
 
       within("tr#artist-#{mayer.id}") do
         expect(page).to have_content "John Mayer"
