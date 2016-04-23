@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 23 Apr 2016 16:46:37 GMT
+      - Sat, 23 Apr 2016 16:32:09 GMT
       Content-Type:
       - application/json; charset=UTF8
       Transfer-Encoding:
@@ -1136,7 +1136,7 @@ http_interactions:
         cC9hcnRpc3RzP2xpbWl0PTUwJnRpbWVfcmFuZ2U9bG9uZ190ZXJtIiwKICAi
         cHJldmlvdXMiIDogbnVsbCwKICAibmV4dCIgOiBudWxsCn0=
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:37 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:09 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/John%20Mayer/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1160,13 +1160,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:41 GMT
+      - Sat, 23 Apr 2016 16:32:11 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '13'
+      - '15'
       Content-Length:
       - '3'
       X-Cache:
@@ -1180,7 +1180,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:41 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:12 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/All%20Sons%20&%20Daughters/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1204,13 +1204,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:42 GMT
+      - Sat, 23 Apr 2016 16:32:12 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '17'
+      - '18'
       Content-Length:
       - '3'
       X-Cache:
@@ -1224,7 +1224,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:42 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:12 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Lord%20Huron/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1248,13 +1248,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:43 GMT
+      - Sat, 23 Apr 2016 16:32:13 GMT
       Etag:
       - '"9c91ace20de37c4dd99db5acb0d57de2"'
       Server:
       - nginx
       X-Runtime:
-      - '20'
+      - '32'
       Content-Length:
       - '1652'
       X-Cache:
@@ -1268,7 +1268,7 @@ http_interactions:
       string: |
         [{"id":11280250,"title":"Lord Huron @ Red Rocks Amphitheatre in Morrison, CO","datetime":"2016-08-11T19:00:00","formatted_datetime":"Thursday, August 11, 2016 at 7:00PM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11280250/buy_tickets?app_id=making_the_band\u0026artist=Lord+Huron\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-01-29T10:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11280250?app_id=making_the_band\u0026artist=Lord+Huron\u0026came_from=67","description":null,"artists":[{"name":"Lord Huron","mbid":null,"image_url":"https://s3.amazonaws.com/bit-photos/large/6044171.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/6044171.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/LordHuron/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/lordhuron","tracker_count":123429,"url":"LordHuron","website":null},{"name":"Trampled by Turtles","mbid":"c6a5a49b-9885-42e6-9fb5-ccaaec05f753","image_url":"https://s3.amazonaws.com/bit-photos/artistLarge.jpg","thumb_url":"https://s3.amazonaws.com/bit-photos/artistThumb.jpg","facebook_tour_dates_url":"http://www.bandsintown.com/TrampledByTurtles/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/TrampledByTurtles","tracker_count":132029,"url":"TrampledByTurtles","website":"http://www.msplinks.com/MDFodHRwOi8vd3d3LnRyYW1wbGVkYnl0dXJ0bGVzLmNvbQ=="}],"venue":{"name":"Red Rocks Amphitheatre","place":"Red Rocks Amphitheatre","city":"Morrison","region":"CO","country":"United States","latitude":39.665619,"longitude":-105.205165}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:43 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:13 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Ben%20Rector/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1292,13 +1292,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:43 GMT
+      - Sat, 23 Apr 2016 16:32:14 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '17'
+      - '12'
       Content-Length:
       - '3'
       X-Cache:
@@ -1312,7 +1312,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:44 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:14 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Ryan%20Adams/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1336,13 +1336,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:44 GMT
+      - Sat, 23 Apr 2016 16:32:15 GMT
       Etag:
       - '"1f3eb90bae3efbba16aa35a0a72c559e"'
       Server:
       - nginx
       X-Runtime:
-      - '22'
+      - '20'
       Content-Length:
       - '1223'
       X-Cache:
@@ -1356,7 +1356,7 @@ http_interactions:
       string: |
         [{"id":11445053,"title":"Ryan Adams @ Red Rocks Amphitheatre in Morrison, CO","datetime":"2016-08-17T19:00:00","formatted_datetime":"Wednesday, August 17, 2016 at 7:00PM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11445053/buy_tickets?app_id=making_the_band\u0026artist=Ryan+Adams\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-02-19T10:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11445053?app_id=making_the_band\u0026artist=Ryan+Adams\u0026came_from=67","description":null,"artists":[{"name":"Ryan Adams","mbid":"c80f38a6-9980-485d-997c-5c1a9cbd0d64","image_url":"https://s3.amazonaws.com/bit-photos/large/4401906.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/4401906.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/RyanAdams/facebookapp?came_from=67","facebook_page_url":"http://www.facebook.com/pages/Ryan%20Adams/6943041430","tracker_count":307276,"url":"RyanAdams","website":"http://www.ryan-adams.com"}],"venue":{"name":"Red Rocks Amphitheatre","place":"Red Rocks Amphitheatre","city":"Morrison","region":"CO","country":"United States","latitude":39.665619,"longitude":-105.205165}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:45 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:15 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Bruno%20Mars/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1380,13 +1380,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:45 GMT
+      - Sat, 23 Apr 2016 16:32:16 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '21'
+      - '27'
       Content-Length:
       - '3'
       X-Cache:
@@ -1400,7 +1400,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:46 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:16 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Brandon%20Flowers/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1424,13 +1424,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:46 GMT
+      - Sat, 23 Apr 2016 16:32:16 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '19'
+      - '18'
       Content-Length:
       - '3'
       X-Cache:
@@ -1444,7 +1444,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:46 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:17 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Noah%20Gundersen/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1468,13 +1468,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:47 GMT
+      - Sat, 23 Apr 2016 16:32:17 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '18'
+      - '21'
       Content-Length:
       - '3'
       X-Cache:
@@ -1488,7 +1488,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:47 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:18 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Justin%20Timberlake/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1512,13 +1512,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:48 GMT
+      - Sat, 23 Apr 2016 16:32:18 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '31'
+      - '18'
       Content-Length:
       - '3'
       X-Cache:
@@ -1532,7 +1532,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:48 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:19 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/David%20Ramirez/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1556,13 +1556,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:49 GMT
+      - Sat, 23 Apr 2016 16:32:19 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '14'
+      - '17'
       Content-Length:
       - '3'
       X-Cache:
@@ -1576,7 +1576,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:49 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:19 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Manchester%20Orchestra/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1600,13 +1600,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:49 GMT
+      - Sat, 23 Apr 2016 16:32:20 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '27'
+      - '14'
       Content-Length:
       - '3'
       X-Cache:
@@ -1620,7 +1620,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:50 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:20 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/The%20Brilliance/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1644,13 +1644,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:50 GMT
+      - Sat, 23 Apr 2016 16:32:21 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '17'
+      - '18'
       Content-Length:
       - '3'
       X-Cache:
@@ -1664,7 +1664,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:51 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:21 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Little%20Mix/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1688,13 +1688,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:51 GMT
+      - Sat, 23 Apr 2016 16:32:22 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '14'
+      - '20'
       Content-Length:
       - '3'
       X-Cache:
@@ -1708,7 +1708,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:52 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:22 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Bon%20Iver/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1732,13 +1732,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:52 GMT
+      - Sat, 23 Apr 2016 16:32:23 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '13'
+      - '21'
       Content-Length:
       - '3'
       X-Cache:
@@ -1752,7 +1752,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:52 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:23 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/The%20Lone%20Bellow/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1776,13 +1776,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:53 GMT
+      - Sat, 23 Apr 2016 16:32:23 GMT
       Etag:
       - '"84867178e4cd3679774752bca45040da"'
       Server:
       - nginx
       X-Runtime:
-      - '20'
+      - '26'
       Content-Length:
       - '1199'
       X-Cache:
@@ -1796,7 +1796,7 @@ http_interactions:
       string: |
         [{"id":11932045,"title":"The Lone Bellow @ Rocky Mountain Folks Festival in Lyons, CO","datetime":"2016-08-21T19:00:00","formatted_datetime":"Sunday, August 21, 2016 at 7:00PM","formatted_location":"Lyons, CO","ticket_url":"http://www.bandsintown.com/event/11932045/buy_tickets?app_id=making_the_band\u0026artist=The+Lone+Bellow\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-04-14T00:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11932045?app_id=making_the_band\u0026artist=The+Lone+Bellow\u0026came_from=67","description":"Schedule TBA","artists":[{"name":"The Lone Bellow","mbid":null,"image_url":"https://s3.amazonaws.com/bit-photos/large/6057363.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/6057363.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/TheLoneBellow/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/TheLoneBellow","tracker_count":60661,"url":"TheLoneBellow","website":null}],"venue":{"name":"Rocky Mountain Folks Festival","place":"Rocky Mountain Folks Festival","city":"Lyons","region":"CO","country":"United States","latitude":40.2241074,"longitude":-105.2715604}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:53 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:24 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Milo%20Greene/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1820,13 +1820,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:54 GMT
+      - Sat, 23 Apr 2016 16:32:24 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '18'
+      - '13'
       Content-Length:
       - '3'
       X-Cache:
@@ -1840,7 +1840,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:54 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:25 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/The%20Avett%20Brothers/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1864,13 +1864,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:55 GMT
+      - Sat, 23 Apr 2016 16:32:25 GMT
       Etag:
       - '"02896e1da06e8c98e75a3d083bd40851"'
       Server:
       - nginx
       X-Runtime:
-      - '55'
+      - '32'
       Content-Length:
       - '5038'
       X-Cache:
@@ -1886,7 +1886,7 @@ http_interactions:
         {"id":11230934,"title":"The Avett Brothers @ Red Rocks Amphitheatre in Morrison, CO","datetime":"2016-07-29T19:30:00","formatted_datetime":"Friday, July 29, 2016 at 7:30PM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11230934/buy_tickets?app_id=making_the_band\u0026artist=The+Avett+Brothers\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-01-22T10:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11230934?app_id=making_the_band\u0026artist=The+Avett+Brothers\u0026came_from=67","description":null,"artists":[{"name":"The Avett Brothers","mbid":"0a176d0a-ef46-4e7f-b018-9f4d65614668","image_url":"https://s3.amazonaws.com/bit-photos/large/5868820.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/5868820.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/TheAvettBrothers/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/theavettbrothers","tracker_count":480989,"url":"TheAvettBrothers","website":"http://www.theavettbrothers.com"},{"name":"Gary Clark Jr.","mbid":null,"image_url":"https://s3.amazonaws.com/bit-photos/artistLarge.jpg","thumb_url":"https://s3.amazonaws.com/bit-photos/artistThumb.jpg","facebook_tour_dates_url":"http://www.bandsintown.com/GaryClarkJr./facebookapp?came_from=67","facebook_page_url":"http://www.facebook.com/pages/Gary%20Clark%20Jr/188757841153703","tracker_count":195446,"url":"GaryClarkJr.","website":"http://www.garyclarkjr.com"}],"venue":{"name":"Red Rocks Amphitheatre","place":"Red Rocks Amphitheatre","city":"Morrison","region":"CO","country":"United States","latitude":39.665619,"longitude":-105.205165}},
         {"id":11241112,"title":"The Avett Brothers @ Red Rocks Amphitheatre in Morrison, CO","datetime":"2016-07-30T07:30:00","formatted_datetime":"Saturday, July 30, 2016 at 7:30AM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11241112/buy_tickets?app_id=making_the_band\u0026artist=The+Avett+Brothers\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-01-22T10:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11241112?app_id=making_the_band\u0026artist=The+Avett+Brothers\u0026came_from=67","description":null,"artists":[{"name":"The Avett Brothers","mbid":"0a176d0a-ef46-4e7f-b018-9f4d65614668","image_url":"https://s3.amazonaws.com/bit-photos/large/5868820.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/5868820.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/TheAvettBrothers/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/theavettbrothers","tracker_count":480989,"url":"TheAvettBrothers","website":"http://www.theavettbrothers.com"},{"name":"J Mascis","mbid":"82315599-2215-4c3e-a36f-87be58d06ec0","image_url":"https://s3.amazonaws.com/bit-photos/artistLarge.jpg","thumb_url":"https://s3.amazonaws.com/bit-photos/artistThumb.jpg","facebook_tour_dates_url":"http://www.bandsintown.com/JMascis/facebookapp?came_from=67","facebook_page_url":null,"tracker_count":34971,"url":"JMascis","website":"http://www.jmascis.com"}],"venue":{"name":"Red Rocks Amphitheatre","place":"Red Rocks Amphitheatre","city":"Morrison","region":"CO","country":"United States","latitude":39.665619,"longitude":-105.205165}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:55 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:25 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/The%20Last%20Bison/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1910,13 +1910,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:55 GMT
+      - Sat, 23 Apr 2016 16:32:26 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '16'
+      - '26'
       Content-Length:
       - '3'
       X-Cache:
@@ -1930,7 +1930,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:56 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:26 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/One%20Direction/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1954,13 +1954,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:56 GMT
+      - Sat, 23 Apr 2016 16:32:27 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '15'
+      - '13'
       Content-Length:
       - '3'
       X-Cache:
@@ -1974,7 +1974,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:57 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:27 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Sam%20Smith/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -1998,13 +1998,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:57 GMT
+      - Sat, 23 Apr 2016 16:32:28 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '23'
+      - '16'
       Content-Length:
       - '3'
       X-Cache:
@@ -2018,7 +2018,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:57 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:28 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Dave%20Matthews%20Band/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2042,13 +2042,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:58 GMT
+      - Sat, 23 Apr 2016 16:32:29 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '24'
+      - '21'
       Content-Length:
       - '3'
       X-Cache:
@@ -2062,7 +2062,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:58 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:29 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Beirut/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2086,13 +2086,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:59 GMT
+      - Sat, 23 Apr 2016 16:32:29 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '22'
+      - '16'
       Content-Length:
       - '3'
       X-Cache:
@@ -2106,7 +2106,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:46:59 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:30 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/The%20Digital%20Age/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2130,13 +2130,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:46:59 GMT
+      - Sat, 23 Apr 2016 16:32:30 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '14'
+      - '11'
       Content-Length:
       - '3'
       X-Cache:
@@ -2150,7 +2150,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:00 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:31 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/James%20Taylor/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2174,13 +2174,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:00 GMT
+      - Sat, 23 Apr 2016 16:32:31 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '14'
+      - '19'
       Content-Length:
       - '3'
       X-Cache:
@@ -2194,7 +2194,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:01 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:31 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Wolves%20At%20The%20Gate/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2218,13 +2218,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:01 GMT
+      - Sat, 23 Apr 2016 16:32:32 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '13'
+      - '16'
       Content-Length:
       - '3'
       X-Cache:
@@ -2238,7 +2238,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:01 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:32 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Steve%20Martin/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2262,13 +2262,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:02 GMT
+      - Sat, 23 Apr 2016 16:32:33 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '19'
+      - '12'
       Content-Length:
       - '3'
       X-Cache:
@@ -2282,7 +2282,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:02 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:33 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/John%20Denver/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2306,13 +2306,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:03 GMT
+      - Sat, 23 Apr 2016 16:32:34 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '12'
+      - '21'
       Content-Length:
       - '3'
       X-Cache:
@@ -2326,7 +2326,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:03 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:34 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Katy%20Perry/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2350,13 +2350,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:03 GMT
+      - Sat, 23 Apr 2016 16:32:34 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '18'
+      - '16'
       Content-Length:
       - '3'
       X-Cache:
@@ -2370,7 +2370,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:04 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:35 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Jimmy%20Eat%20World/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2394,13 +2394,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:04 GMT
+      - Sat, 23 Apr 2016 16:32:35 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '14'
+      - '30'
       Content-Length:
       - '3'
       X-Cache:
@@ -2414,7 +2414,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:05 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:36 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Lovelite/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2438,7 +2438,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:05 GMT
+      - Sat, 23 Apr 2016 16:32:36 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
@@ -2458,7 +2458,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:05 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:36 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/John%20Mark%20McMillan/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2482,7 +2482,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:06 GMT
+      - Sat, 23 Apr 2016 16:32:37 GMT
       Etag:
       - '"367c6a9f71841328879b846a21a2131e"'
       Server:
@@ -2502,7 +2502,7 @@ http_interactions:
       string: |
         [{"id":11783234,"title":"John Mark McMillan @ Red Rocks Amphitheatre in Morrison, CO","datetime":"2016-09-15T19:00:00","formatted_datetime":"Thursday, September 15, 2016 at 7:00PM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11783234/buy_tickets?app_id=making_the_band\u0026artist=John+Mark+McMillan\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2009-09-11T20:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11783234?app_id=making_the_band\u0026artist=John+Mark+McMillan\u0026came_from=67","description":"with Mat Kearney, John Mark McMillan, Welshly Arms","artists":[{"name":"John Mark McMillan","mbid":"8223aab8-64cd-4211-9be5-eabc4c6390de","image_url":"https://s3.amazonaws.com/bit-photos/large/6093337.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/6093337.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/JohnMarkMcmillan/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/JohnMarkMcMillan","tracker_count":44663,"url":"JohnMarkMcmillan","website":"http://www.thejohnmark.com"}],"venue":{"name":"Red Rocks Amphitheatre","place":"Red Rocks Amphitheatre","city":"Morrison","region":"CO","country":"United States","latitude":39.665619,"longitude":-105.205165}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:06 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:37 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Daryl%20Hall%20&%20John%20Oates/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2526,13 +2526,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:07 GMT
+      - Sat, 23 Apr 2016 16:32:38 GMT
       Etag:
       - '"214dc597c3d8f97a09b71c3f03b9510d"'
       Server:
       - nginx
       X-Runtime:
-      - '33'
+      - '27'
       Content-Length:
       - '1311'
       X-Cache:
@@ -2546,7 +2546,7 @@ http_interactions:
       string: |
         [{"id":11403044,"title":"Hall \u0026 Oates @ Red Rocks Amphitheatre in Morrison, CO","datetime":"2016-09-12T19:00:00","formatted_datetime":"Monday, September 12, 2016 at 7:00PM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11403044/buy_tickets?app_id=making_the_band\u0026artist=Hall+%26+Oates\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-02-12T10:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11403044?app_id=making_the_band\u0026artist=Hall+%26+Oates\u0026came_from=67","description":"with Trombone Shorty \u0026 Orleans Avenue and Sharon Jones \u0026 The Dap-Kings","artists":[{"name":"Hall \u0026 Oates","mbid":"debabff3-2559-46e5-862d-ef2a906d7010","image_url":"https://s3.amazonaws.com/bit-photos/large/5829107.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/5829107.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/HallAndOates/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/hallandoates","tracker_count":338267,"url":"HallAndOates","website":"http://hallandoates.com"}],"venue":{"name":"Red Rocks Amphitheatre","place":"Red Rocks Amphitheatre","city":"Morrison","region":"CO","country":"United States","latitude":39.665619,"longitude":-105.205165}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:07 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:38 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Coldplay/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2570,13 +2570,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:08 GMT
+      - Sat, 23 Apr 2016 16:32:39 GMT
       Etag:
       - '"90102f01e2fe688b2ff5d43384e52baa"'
       Server:
       - nginx
       X-Runtime:
-      - '17'
+      - '26'
       Content-Length:
       - '1162'
       X-Cache:
@@ -2590,7 +2590,7 @@ http_interactions:
       string: |
         [{"id":11840521,"title":"Coldplay @ Pepsi Center in Denver, CO","datetime":"2016-08-29T19:00:00","formatted_datetime":"Monday, August 29, 2016 at 7:00PM","formatted_location":"Denver, CO","ticket_url":"http://www.bandsintown.com/event/11840521/buy_tickets?app_id=making_the_band\u0026artist=Coldplay\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-04-14T16:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11840521?app_id=making_the_band\u0026artist=Coldplay\u0026came_from=67","description":"with Alessia Cara","artists":[{"name":"Coldplay","mbid":"cc197bad-dc9c-440d-a5b5-d52ba2e14234","image_url":"https://s3.amazonaws.com/bit-photos/large/5823349.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/5823349.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/Coldplay/facebookapp?came_from=67","facebook_page_url":"http://www.facebook.com/coldplay","tracker_count":3410916,"url":"Coldplay","website":"http://coldplay.com"}],"venue":{"name":"Pepsi Center","place":"Pepsi Center","city":"Denver","region":"CO","country":"United States","latitude":39.74894,"longitude":-105.007643}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:08 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:39 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Gungor/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2614,13 +2614,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:09 GMT
+      - Sat, 23 Apr 2016 16:32:40 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '16'
+      - '12'
       Content-Length:
       - '3'
       X-Cache:
@@ -2634,7 +2634,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:09 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:40 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Mumford%20&%20Sons/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2658,7 +2658,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:09 GMT
+      - Sat, 23 Apr 2016 16:32:40 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
@@ -2678,7 +2678,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:10 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:41 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Page%20CXVI/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2702,7 +2702,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:10 GMT
+      - Sat, 23 Apr 2016 16:32:41 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
@@ -2722,7 +2722,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:11 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:42 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Vitamin%20String%20Quartet/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2746,13 +2746,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:11 GMT
+      - Sat, 23 Apr 2016 16:32:42 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '19'
+      - '14'
       Content-Length:
       - '3'
       X-Cache:
@@ -2766,7 +2766,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:12 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:42 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/NEEDTOBREATHE/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2790,13 +2790,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:12 GMT
+      - Sat, 23 Apr 2016 16:32:43 GMT
       Etag:
       - '"25ea94cb5bfb3b242dd72bb42a8be439"'
       Server:
       - nginx
       X-Runtime:
-      - '43'
+      - '27'
       Content-Length:
       - '3022'
       X-Cache:
@@ -2810,7 +2810,7 @@ http_interactions:
       string: |
         [{"id":11783234,"title":"NEEDTOBREATHE @ Red Rocks Amphitheatre in Morrison, CO","datetime":"2016-09-15T19:00:00","formatted_datetime":"Thursday, September 15, 2016 at 7:00PM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11783234/buy_tickets?app_id=making_the_band\u0026artist=NEEDTOBREATHE\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2009-09-11T20:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11783234?app_id=making_the_band\u0026artist=NEEDTOBREATHE\u0026came_from=67","description":"FANCLUB \u201cINSIDERS\" PRESALE: April 4 at 10am EST\n\u2022 Join NEEDTOBREATHE\u2019s fanclub, \u201cTHE INSIDERS,\"  to receive access to tickets before everyone else: www.ntbinsiders.com\n\nFANS ONLY PRESALE: April 11 at 10am LOCAL\n\u2022 Join NEEDTOBREATHE\u2019s MAILING LIST or RSVP to our FACEBOOK EVENT to receive a presale password for April 11 (smarturl.it/TDC2016)\n\nPUBLIC ONSALE: Friday, April 15th at 10am LOCAL\n\u2022 Tickets available to the general public.\n\nVisit www.tourdecompadres.com for all information!","artists":[{"name":"NEEDTOBREATHE","mbid":"c5c2f1bb-09db-429f-8f77-ed9dfe39a36b","image_url":"https://s3.amazonaws.com/bit-photos/large/6044948.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/6044948.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/NEEDTOBREATHE/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/NEEDTOBREATHE","tracker_count":294982,"url":"NEEDTOBREATHE","website":"http://www.needtobreathe.net"},{"name":"Mat Kearney","mbid":"320d40d6-28dd-42d7-b05f-7e6e8d399a2e","image_url":"https://s3.amazonaws.com/bit-photos/artistLarge.jpg","thumb_url":"https://s3.amazonaws.com/bit-photos/artistThumb.jpg","facebook_tour_dates_url":"http://www.bandsintown.com/MatKearney/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/matkearney","tracker_count":293114,"url":"MatKearney","website":"http://matkearney.com"},{"name":"John Mark McMillan","mbid":"8223aab8-64cd-4211-9be5-eabc4c6390de","image_url":"https://s3.amazonaws.com/bit-photos/artistLarge.jpg","thumb_url":"https://s3.amazonaws.com/bit-photos/artistThumb.jpg","facebook_tour_dates_url":"http://www.bandsintown.com/JohnMarkMcmillan/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/JohnMarkMcMillan","tracker_count":44663,"url":"JohnMarkMcmillan","website":"http://www.thejohnmark.com"},{"name":"Welshly Arms","mbid":null,"image_url":"https://s3.amazonaws.com/bit-photos/artistLarge.jpg","thumb_url":"https://s3.amazonaws.com/bit-photos/artistThumb.jpg","facebook_tour_dates_url":"http://www.bandsintown.com/WelshlyArms/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/welshlyarmsband","tracker_count":2217,"url":"WelshlyArms","website":null}],"venue":{"name":"Red Rocks Amphitheatre","place":"Red Rocks Amphitheatre","city":"Morrison","region":"CO","country":"United States","latitude":39.665619,"longitude":-105.205165}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:13 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:43 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/the%20bird%20and%20the%20bee/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2834,7 +2834,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:13 GMT
+      - Sat, 23 Apr 2016 16:32:44 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
@@ -2854,7 +2854,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:13 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:44 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Bryan%20John%20Appleby/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2878,13 +2878,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:14 GMT
+      - Sat, 23 Apr 2016 16:32:44 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '25'
+      - '22'
       Content-Length:
       - '3'
       X-Cache:
@@ -2898,7 +2898,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:14 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:45 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/The%20Devil%20Wears%20Prada/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2922,13 +2922,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:15 GMT
+      - Sat, 23 Apr 2016 16:32:45 GMT
       Etag:
       - '"481a52d32c0ca07e0ccd4b38ddb05baa"'
       Server:
       - nginx
       X-Runtime:
-      - '28'
+      - '19'
       Content-Length:
       - '1186'
       X-Cache:
@@ -2942,7 +2942,7 @@ http_interactions:
       string: |
         [{"id":11174206,"title":"The Devil Wears Prada @ HeavenFest in Morrison, CO","datetime":"2016-07-29T12:00:00","formatted_datetime":"Friday, July 29, 2016 at 12:00PM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11174206/buy_tickets?app_id=making_the_band\u0026artist=The+Devil+Wears+Prada\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":null,"facebook_rsvp_url":"http://www.bandsintown.com/event/11174206?app_id=making_the_band\u0026artist=The+Devil+Wears+Prada\u0026came_from=67","description":null,"artists":[{"name":"The Devil Wears Prada","mbid":"43c0958c-27ef-46c4-b4cc-83cfca54170d","image_url":"https://s3.amazonaws.com/bit-photos/large/6038506.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/6038506.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/TheDevilWearsPrada/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/tdwp","tracker_count":569181,"url":"TheDevilWearsPrada","website":""}],"venue":{"name":"HeavenFest","place":"Bandimere Speedway","city":"Morrison","region":"CO","country":"United States","latitude":39.6622658,"longitude":-105.1875}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:15 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:46 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Citizens/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -2966,13 +2966,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:16 GMT
+      - Sat, 23 Apr 2016 16:32:46 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '14'
+      - '15'
       Content-Length:
       - '3'
       X-Cache:
@@ -2986,7 +2986,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:16 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:46 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/HAIM/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -3010,13 +3010,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:17 GMT
+      - Sat, 23 Apr 2016 16:32:47 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '19'
+      - '14'
       Content-Length:
       - '3'
       X-Cache:
@@ -3030,7 +3030,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:17 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:47 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Shane%20&%20Shane/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -3054,13 +3054,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:18 GMT
+      - Sat, 23 Apr 2016 16:32:48 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '23'
+      - '16'
       Content-Length:
       - '3'
       X-Cache:
@@ -3074,7 +3074,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:18 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:49 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/August%20Burns%20Red/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -3098,13 +3098,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:18 GMT
+      - Sat, 23 Apr 2016 16:32:49 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '28'
+      - '18'
       Content-Length:
       - '3'
       X-Cache:
@@ -3118,7 +3118,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:19 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:49 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Johnnyswim/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -3142,13 +3142,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:19 GMT
+      - Sat, 23 Apr 2016 16:32:50 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '17'
+      - '15'
       Content-Length:
       - '3'
       X-Cache:
@@ -3162,7 +3162,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:20 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:50 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Phil%20Wickham/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -3186,13 +3186,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:20 GMT
+      - Sat, 23 Apr 2016 16:32:51 GMT
       Etag:
       - '"faf576964d86b6e0aef233c6b936fc0d"'
       Server:
       - nginx
       X-Runtime:
-      - '19'
+      - '25'
       Content-Length:
       - '1060'
       X-Cache:
@@ -3206,7 +3206,7 @@ http_interactions:
       string: |
         [{"id":11087472,"title":"Phil Wickham @ Pepsi Center in Denver, CO","datetime":"2016-07-14T19:30:00","formatted_datetime":"Thursday, July 14, 2016 at 7:30PM","formatted_location":"Denver, CO","ticket_url":null,"ticket_type":null,"ticket_status":"unavailable","on_sale_datetime":null,"facebook_rsvp_url":"http://www.bandsintown.com/event/11087472?app_id=making_the_band\u0026artist=Phil+Wickham\u0026came_from=67","description":"Chris Tomlin Tickets","artists":[{"name":"Phil Wickham","mbid":"b635a97f-a971-4d53-8317-b21d3ca4f901","image_url":"https://s3.amazonaws.com/bit-photos/large/5971349.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/5971349.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/PhilWickham/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/philwickham","tracker_count":139112,"url":"PhilWickham","website":"http://www.philwickham.com"}],"venue":{"name":"Pepsi Center","place":"Pepsi Center","city":"Denver","region":"CO","country":"United States","latitude":39.74894,"longitude":-105.007643}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:20 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:51 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/Steely%20Dan/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -3230,13 +3230,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:21 GMT
+      - Sat, 23 Apr 2016 16:32:52 GMT
       Etag:
       - '"6dacb08f3c5727c495ee23368fd39fa6"'
       Server:
       - nginx
       X-Runtime:
-      - '20'
+      - '19'
       Content-Length:
       - '1199'
       X-Cache:
@@ -3250,7 +3250,7 @@ http_interactions:
       string: |
         [{"id":11483185,"title":"Steely Dan @ Red Rocks Amphitheatre in Morrison, CO","datetime":"2016-06-13T19:00:00","formatted_datetime":"Monday, June 13, 2016 at 7:00PM","formatted_location":"Morrison, CO","ticket_url":"http://www.bandsintown.com/event/11483185/buy_tickets?app_id=making_the_band\u0026artist=Steely+Dan\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-02-27T10:00:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11483185?app_id=making_the_band\u0026artist=Steely+Dan\u0026came_from=67","description":null,"artists":[{"name":"Steely Dan","mbid":"e01c3376-15fa-40d7-b747-5f219bdefdd7","image_url":"https://s3.amazonaws.com/bit-photos/large/5969149.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/5969149.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/SteelyDan/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/SteelyDan","tracker_count":237302,"url":"SteelyDan","website":"http://www.steelydan.com/"}],"venue":{"name":"Red Rocks Amphitheatre","place":"Red Rocks Amphitheatre","city":"Morrison","region":"CO","country":"United States","latitude":39.665619,"longitude":-105.205165}}]
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:21 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:52 GMT
 - request:
     method: get
     uri: http://api.bandsintown.com/artists/blink-182/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,-104.9903&radius=50
@@ -3274,13 +3274,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 23 Apr 2016 16:47:22 GMT
+      - Sat, 23 Apr 2016 16:32:52 GMT
       Etag:
       - '"58e0494c51d30eb3494f7c9198986bb9"'
       Server:
       - nginx
       X-Runtime:
-      - '22'
+      - '16'
       Content-Length:
       - '3'
       X-Cache:
@@ -3294,7 +3294,7 @@ http_interactions:
       string: |
         []
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:22 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:53 GMT
 - request:
     method: post
     uri: https://f3d2ac08aac547b6b9e97663236da32d:04284d8b4054405bb3dea49378b0baed@accounts.spotify.com/api/token
@@ -3318,7 +3318,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 23 Apr 2016 16:47:26 GMT
+      - Sat, 23 Apr 2016 16:32:56 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -3331,5 +3331,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error":"invalid_grant","error_description":"Invalid refresh token"}'
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 16:47:27 GMT
+  recorded_at: Sat, 23 Apr 2016 16:32:57 GMT
 recorded_with: VCR 3.0.1

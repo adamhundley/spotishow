@@ -7,6 +7,8 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
 
   scenario "User visits the root and logs in with spotify credintials" do
     VCR.use_cassette("feature#top_artists") do
+      send_location
+      
       visit "/"
       click_on "login-button"
       click_on "my artists"
@@ -15,7 +17,6 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
       mayer = Artist.find_by(name: "John Mayer")
       rector = Artist.find_by(name:"Ben Rector")
       huron = Artist.find_by(name: "Lord Huron")
-      require "pry"; binding.pry
 
       within("tr#artist-#{mayer.id}") do
         expect(page).to have_content "John Mayer"

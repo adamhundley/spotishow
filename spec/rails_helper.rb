@@ -92,7 +92,7 @@ def stub_omniauth
       image: "https://scontent.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p200x200/12049656_10100204503401754_3715087154579945830_n.jpg?oh=f7d96813ab87b164df6f41f4265d7d7b&oe=57B548E1"
     },
     credentials: {
-      token: "BQBX-jRP3gJsQgI9lBWyFcySebE7CcdK-A2Eu68ku8-L5iLJZpoScBQyk-y6DrIEj0cBBG_S1BmmrceLMKPM0V7wfUP-GZdALI0UgrZriJ_RE6TN1dykXEqtGHB2Vcg0_eR7PLeBhyFmSSasl0cToHLr",
+      token: "BQA709QL6aQKKsArnnmNUsNujbk_1VB0a_vsQnivIrEag0J-Kl5KAOkUkQMZTZZiloHVc9EWdsy3Tp0RImGjEXNjGSonToY_i-EfrrlJbAgdwFgd2zZLcZM7tTCSXE52PW2RMn4CgiK7lkBNxPWQuFFy",
       refresh_token: 1461029417
     },
     extra: {
@@ -101,4 +101,8 @@ def stub_omniauth
       }
     }
   })
+end
+
+def send_location
+  page.driver.post('/api/location', {lat: 39.7392, lng: -104.9903}, :format => 'json')
 end

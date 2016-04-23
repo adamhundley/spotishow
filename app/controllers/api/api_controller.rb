@@ -13,4 +13,8 @@ module Api
       head :no_content
     end
   end
+
+  def index
+
+  end
 end
