@@ -34,9 +34,9 @@ $( document).ready(function() {
   $('#login-button').click(function() {
     $('#login-button').hide();
     $('.welcome-text').hide();
-    $.get('/api/shows')
   });
   $('#login-button').click(function() {
     $('.spinner').show();
   });
+
 });
