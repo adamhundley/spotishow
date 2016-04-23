@@ -1,6 +1,29 @@
-<% @shows.each do |show| %>
-  <%= show.title %>
-  <%= show.formatted_datetime  %>
-  <%= show.formatted_location  %>
-  <br>
-<% end %>
+<div class="show-table-background">
+  <div class="container show-table">
+    <table class="table shows-table">
+      <thead class="shows">
+        <tr class="shows">
+          <th class="shows show-date"></th>
+          <th class="shows show-artist"></th>
+          <th class="shows show-name"></th>
+          <th class="shows show-facebook"></th>
+          <th class="shows show-untrack"></th>
+        </tr>
+      </thead>
+      <tbody class="shows-body">
+        <% @shows.each do |show| %>
+            <tr class="shows" id="show-<%= show.id %>">
+              <td class="shows show-date"><%= show.datetime.month %>/<%= show.datetime.day %></td>
+              <td class="shows show-artist"><%= show.artist_name %></td>
+              <td class="shows show-venue"><%= show.venue_name %></td>
+              <td class="shows show-location"><%= show.formatted_location %></td>
+              <td class="shows show-tickets"><%= link_to image_tag("ticket.png", class:"ticket"), show.ticket_url, {target: "_blank"} %>
+              </td>
+              <td class="shows show-rsvp"><%= link_to image_tag("facebook.png", class:"facebook"), show.facebook_rsvp_url, {target: "_blank"} %>
+              </td>
+            </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
