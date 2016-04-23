@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
     :if => lambda{ |obj| obj.location_changed? }
 
 
-  def self.from_omniauth(auth_info)
+  def self.from_omniauth(auth_info, location)
     where(uid: auth_info[:uid]).first_or_create do |new_user|
       new_user.uid           = auth_info.uid
       new_user.name          = auth_info[:info][:name]
@@ -29,8 +29,10 @@ class User < ActiveRecord::Base
       new_user.url           = auth_info[:extra][:raw_info][:href]
       new_user.refresh_token = auth_info[:credentials][:refresh_token]
       new_user.token_expire  = auth_info[:credentials][:expires_at]
+      new_user.latitude      = location[:latitude]
+      new_user.longitude     = location[:longitude]
       UserArtistCreator.new(new_user)
-      # UserShowCreator.new(new_user)
+      UserShowCreator.new(new_user)
     end
   end
 

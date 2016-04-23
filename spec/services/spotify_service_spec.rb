@@ -4,7 +4,7 @@ describe SpotifyService do
   context "#top artists" do
     scenario "returns top artists" do
       VCR.use_cassette("spotify_service#top_artists") do
-         user = User.create(token: "BQBcb9gpiulwmu-H1aehBMsBDom7Gdlr395TdBzKF7Qk_Nz5IzNyKGDl-KBXsS-fnKCK3dtPUldfY8foijndGQ8UgRwby5ulflJdFg3VWp2aWmODp_Dwi9weS9eFEL5aokZMUOI1Xw6KEX7TdSuqjviU")
+         user = User.create(token: "BQBX-jRP3gJsQgI9lBWyFcySebE7CcdK-A2Eu68ku8-L5iLJZpoScBQyk-y6DrIEj0cBBG_S1BmmrceLMKPM0V7wfUP-GZdALI0UgrZriJ_RE6TN1dykXEqtGHB2Vcg0_eR7PLeBhyFmSSasl0cToHLr")
 
         service = SpotifyService.new
         artists = service.top_artists(user)

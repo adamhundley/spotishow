@@ -1,28 +1,40 @@
 <div class="artist-table-background">
-<div class="container artist-table">
-  <table class="table artists">
-    <thead class="artists">
-      <tr class="artists">
-        <th class="artists artist-images"></th>
-        <th class="artists artist-name">Artist</th>
-        <th class="artists artist-facebook">Tour</th>
-        <th class="artists spotify"><%= image_tag("listen-on-spotify.png", class:"listen-on-spotify") %></th>
-        <th class="artists artist-untrack">untrack</th>
-      </tr>
-    </thead>
-    <tbody class="artists-body">
-      <% @artists.each do |artist| %>
-          <tr class="artists" id="artist-<%= artist.id %>">
-            <td class="artists artist-images"><%= image_tag(artist.spotify_image_url, class:"artist-image") %></td>
-            <td class="artist-name"><%= artist.name %></td>
-            <td class="artists artist-facebook"><%= link_to image_tag("live.png", class:"live"), artist.facebook_url %></td>
-            <td class="artists spotify"><%= link_to image_tag("listen-on-spotify.png", class:"listen-on-spotify"), artist.spotify_uri %></td>
-            <td class="artists artists-untrack">
-              <button type="button" name="button" class="btn btn-danger btn-md">untrack</button>
-            </td>
-          </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
+  <div class="container artist-table">
+    <table class="table artists">
+      <thead class="artists">
+        <tr class="artists">
+          <th class="artists artist-images"></th>
+          <th class="artists artist-name">Artist</th>
+          <th class="artists artist-facebook">Tour</th>
+          <th class="artists spotify"><%= image_tag("listen-on-spotify.png", class:"listen-on-spotify") %></th>
+          <th class="artists artist-untrack">untrack</th>
+        </tr>
+      </thead>
+      <tbody class="artists-body">
+        <% @artists.each do |artist| %>
+            <tr class="artists" id="artist-<%= artist.id %>">
+              <td class="artists artist-images"><%= image_tag(artist.spotify_image_url, class:"artist-image") %></td>
+              <td class="artist-name"><%= artist.name %></td>
+              <td class="artists artist-facebook"><%= link_to image_tag("live.png", class:"live"), artist.facebook_url, {'data-target' => ".artist-#{artist.id}-modal", 'data-toggle' => "modal"} %>
+
+                <button type="hidden" class="" data-toggle="modal" data-target=".artist-<%= artist.id %>-modal">Large modal</button>
+
+                <div class="modal fade artist-<%= artist.id %>-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <%= artist.name %>
+                    </div>
+                  </div>
+                </div>
+              </td>
+
+              <td class="artists spotify"><%= link_to image_tag("listen-on-spotify.png", class:"listen-on-spotify"), artist.spotify_uri %></td>
+              <td class="artists artists-untrack">
+                <button type="button" name="button" class="btn btn-danger btn-md">untrack</button>
+              </td>
+            </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 </div>

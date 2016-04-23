@@ -5,9 +5,8 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: {format: :json} do
     post '/location', to: "api#location"
+    get '/shows', to: "api#index"
   end
-
-  # resources :user, only: :update, param: :user_name
 
   namespace :users, path: ":user_name", as: :user do
     get "/dashboard", action: "show", as: :dashboard

@@ -1,9 +1,17 @@
 <div class="hero-unit">
   <div class="welcome-unit text-center">
-    <div class="row">
+
+    <div class="row welcome-text">
       <h1>Welcome to Spotishow</h1>
     </div>
-    <h3>Let us find you live music based on what you listen to</h3>
+    <h3 class="welcome-text">Let us find you live music based on what you listen to</h3>
+    <div class="spinner" style="display:none">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
     <div class="row">
       <%= link_to image_tag("spotify-login.png", id:"login-button"), :spotify_login, id: "login-button" %>
     </div>
