@@ -19,11 +19,25 @@ $( document).ready(function() {
 
   $('.locationIcon').click(function(){
     navigator.geolocation.getCurrentPosition(sendLocation);
-    
+
     function sendLocation(position) {
       $.post('/api/location', {lat:position.coords.latitude, lng:position.coords.longitude});
     }
 
+  });
+
+  $('.untrack-artist').click(function() {
+    var id = $(this).attr('data-id')
+    var uid = $(this).attr('data-uid')
+    $.ajax({
+      url: "/"+uid+"/artists",
+      type: 'DELETE',
+      dataType: "json",
+      data: {
+              'id': id,
+            }
+    });
+    $('.artist-table .artists-body #artist-'+id+'').hide();
   });
 
 

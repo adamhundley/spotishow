@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   namespace :users, path: ":user_name", as: :user do
     get "/dashboard", action: "show", as: :dashboard
     get "/artists", to: "artists#index", as: :artists
+    delete "/artists", to: "artists#destroy", as: :artists_delete
     get "/shows", to: "shows#index", as: :shows
     patch "/", action: "update", params: :id
   end

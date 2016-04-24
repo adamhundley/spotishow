@@ -12,6 +12,8 @@
       </thead>
       <tbody class="artists-body">
         <% @artists.each do |artist| %>
+          <div id="artist-<%= artist.id %>">
+
             <tr class="artists" id="artist-<%= artist.id %>">
               <td class="artists artist-images"><%= image_tag(artist.spotify_image_url, class:"artist-image") %></td>
               <td class="artist-name"><%= artist.name %></td>
@@ -29,10 +31,12 @@
               </td>
 
               <td class="artists spotify"><%= link_to image_tag("listen-on-spotify.png", class:"listen-on-spotify"), artist.spotify_uri %></td>
+
               <td class="artists artists-untrack">
-                <button type="button" name="button" class="btn btn-danger btn-md">untrack</button>
+                <button type="button" name="button" class="btn btn-danger btn-md untrack-artist" data-id="<%= artist.id %>", data-uid="<%= current_user.uid %>">untrack</button>
               </td>
             </tr>
+          </div>
         <% end %>
       </tbody>
     </table>

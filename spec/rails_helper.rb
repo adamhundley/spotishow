@@ -5,6 +5,7 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+require 'support/wait_for_ajax'
 
 ActiveRecord::Migration.maintain_test_schema!
 
@@ -63,6 +64,10 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 end
 
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app, :browser => :chrome)
+end
+
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
@@ -92,7 +97,7 @@ def stub_omniauth
       image: "https://scontent.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p200x200/12049656_10100204503401754_3715087154579945830_n.jpg?oh=f7d96813ab87b164df6f41f4265d7d7b&oe=57B548E1"
     },
     credentials: {
-      token: "BQA709QL6aQKKsArnnmNUsNujbk_1VB0a_vsQnivIrEag0J-Kl5KAOkUkQMZTZZiloHVc9EWdsy3Tp0RImGjEXNjGSonToY_i-EfrrlJbAgdwFgd2zZLcZM7tTCSXE52PW2RMn4CgiK7lkBNxPWQuFFy",
+      token: "BQAjEovZmlo_sRPKKD6fGTP4h2wpg8mvuDJIi0qCcOLR8DFXxivyCcCM2dTRzkLWMpqL6awXJhsG-rOqvvQS5EyRukl2PO859RPy2VI9X71vffxv00fM1TnBdv1IxHPj0-aXRl1ukXSWC8NYTxvuUdCI",
       refresh_token: 1461029417
     },
     extra: {

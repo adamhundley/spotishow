@@ -26,7 +26,11 @@ class BitService
 private
 
   def location(user)
-    "#{user.latitude},#{user.longitude}"
+    if user.latitude != nil
+      "#{user.latitude},#{user.longitude}"
+    else
+      "39.7392, -104.9903"
+    end
   end
 
   def connection
