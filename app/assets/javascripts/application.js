@@ -17,24 +17,23 @@
 
 $( document).ready(function() {
 
-  function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(sendLocation);
-    } else {
-        console.log("Geolocation is not supported by this browser.");
+  $('.locationIcon').click(function(){
+    navigator.geolocation.getCurrentPosition(sendLocation);
+    
+    function sendLocation(position) {
+      $.post('/api/location', {lat:position.coords.latitude, lng:position.coords.longitude});
     }
-  }
 
-  function sendLocation(position) {
-    $.post('/api/location', {lat:position.coords.latitude, lng:position.coords.longitude});
-  }
+  });
 
-  $('.locationIcon').on('click', getLocation())
+
+
 
   $('#login-button').click(function() {
     $('#login-button').hide();
     $('.welcome-text').hide();
   });
+
   $('#login-button').click(function() {
     $('.spinner').show();
   });
