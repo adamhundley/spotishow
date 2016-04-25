@@ -15,6 +15,16 @@ class SpotifyService
       parse(response.body)[:items]
   end
 
+  def artist(artist, user)
+    response = connection.get do |req|
+      req.headers['Authorization'] = "Bearer #{user.token}"
+      req.url 'v1/search'
+      req.params['q'] = artist
+      req.params['type'] = "artist"
+    end
+      parse(response.body)[:artists][:items].first
+  end
+
   def request_new_token(user)
     hash = { grant_type: "refresh_token", refresh_token: user.refresh_token}
     encoded_auth = Base64.strict_encode64("#{apikey}:#{secret}")

@@ -1,15 +1,19 @@
 <div class="artist-table-background">
   <div class="container artist-table">
     <table class="table artists-table">
-      <thead class="artists">
-        <tr class="artists">
-          <th class="artists artist-images"></th>
-          <th class="artists artist-name">Artist</th>
-          <th class="artists artist-facebook">Tour</th>
-          <th class="artists spotify"><%= image_tag("listen-on-spotify.png", class:"listen-on-spotify") %></th>
-          <th class="artists artist-untrack">untrack</th>
-        </tr>
-      </thead>
+      <div class="row text-center add-artist col-sm-6 col-sm-offset-3" id="add-artist">
+        <form class="addArtist form-group">
+          <input type="text" id="name" name="name" placeholder="Enter an Artist" class="form-control ">
+          <input type="submit" name="OK" class="btn btn-success btn-md addArtist" data-uid="<%= current_user.uid %>" value="Search Artist" id="search">
+        </form>
+        <div class="spinner" style="display:none">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
+        </div>
+      </div>
       <tbody class="artists-body">
         <% @artists.each do |artist| %>
           <div id="artist-<%= artist.id %>">

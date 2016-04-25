@@ -97,7 +97,7 @@ def stub_omniauth
       image: "https://scontent.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p200x200/12049656_10100204503401754_3715087154579945830_n.jpg?oh=f7d96813ab87b164df6f41f4265d7d7b&oe=57B548E1"
     },
     credentials: {
-      token: "BQDHiG5mqcxzAY-h3lhHGII9P2w1btSwb26Xdhj_IfRVwwMzRJ-GoBWa3jni34-JRcq95v4o019kgVvJhStEWieOjiULkGVaojYztxQz9m6aSJnOrEp5Y33bbdnFYwmknEooGszB9O3j58zLcDfO8N1v",
+      token: "BQD1y0v9CO3ee1SkL3m81N8i5ITiKE3-YKI-J5tVaBRuNxO36YyDXrZ2pwWr4Y8sJ0RKmQDDkIAIaxCbAHBPRkK_BgcFY3pKcYo6Q5PX-ZG7gAECjEJ0d-qpZJ-CdTQZw4vhNhug05hbXG7JOakdcFL4CxKeqV7JCxJtC9jesGI3uq6PAVaT1GxD0xlEf_eycaGl2ek4v6GmhJlltRBR6hNdmpsCum40Zl69sN20BdIl-YhXaoeBKSjmqoCykgsGby3L88JPuaNJab7mMq1K4RRqQSzfcewFS-RJjaMP26MyesWTMf7hV5rq",
       refresh_token: 1461029417
     },
     extra: {

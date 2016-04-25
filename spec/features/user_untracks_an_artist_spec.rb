@@ -18,6 +18,7 @@ RSpec.feature "UserUntracksAnArtist", type: :feature, js: true do
       huron = Artist.find_by(name: "Lord Huron")
 
       expect(user.artists.count).to eq 50
+      expect(user.shows.count).to eq 11
 
       within("tr#artist-#{huron.id}") do
         click_on "untrack"

@@ -31,7 +31,7 @@ class User < ActiveRecord::Base
       new_user.token_expire  = auth_info[:credentials][:expires_at]
       new_user.latitude      = location[:latitude]
       new_user.longitude     = location[:longitude]
-      UserArtistCreator.new(new_user)
+      UserArtistCreator.make_artists(new_user)
     end
   end
 

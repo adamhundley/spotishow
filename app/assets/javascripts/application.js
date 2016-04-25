@@ -37,10 +37,29 @@ $( document).ready(function() {
               'id': id,
             }
     });
+
     $('.artist-table .artists-body #artist-'+id+'').hide();
   });
 
+  $(".addArtist").on( "submit", function() {
+    event.preventDefault();
+      $('.addArtist').hide();
+      $('.spinner').show();
+      var uid = $(this).attr('data-uid')
 
+      var $form = $( this ),
+            url = $form.attr( 'name' );
+
+      var posting = $.post( "/"+uid+"/artists", { name: $('#name').val()} );
+
+      $(document).ajaxStop(function(){
+        $(".spinner").hide();
+      });
+      
+      $(".artists-body").prepend("ok")
+
+
+  });
 
 
   $('#login-button').click(function() {

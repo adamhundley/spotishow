@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get "/dashboard", action: "show", as: :dashboard
     get "/artists", to: "artists#index", as: :artists
     delete "/artists", to: "artists#destroy", as: :artists_delete
+    post "/artists", to: "artists#create", as: :artists_create
     get "/shows", to: "shows#index", as: :shows
     patch "/", action: "update", params: :id
   end
