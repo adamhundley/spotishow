@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "UserLogsInWithSpotify", type: :feature do
+RSpec.feature "UserViewsShows", type: :feature do
   before(:each) do
     stub_omniauth
   end

@@ -17,7 +17,6 @@ class SpotifyService
 
   def artist(artist, user)
     response = connection.get do |req|
-      req.headers['Authorization'] = "Bearer #{user.token}"
       req.url 'v1/search'
       req.params['q'] = artist
       req.params['type'] = "artist"

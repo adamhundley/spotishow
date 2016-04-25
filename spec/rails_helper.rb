@@ -97,8 +97,9 @@ def stub_omniauth
       image: "https://scontent.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p200x200/12049656_10100204503401754_3715087154579945830_n.jpg?oh=f7d96813ab87b164df6f41f4265d7d7b&oe=57B548E1"
     },
     credentials: {
-      token: "BQD1y0v9CO3ee1SkL3m81N8i5ITiKE3-YKI-J5tVaBRuNxO36YyDXrZ2pwWr4Y8sJ0RKmQDDkIAIaxCbAHBPRkK_BgcFY3pKcYo6Q5PX-ZG7gAECjEJ0d-qpZJ-CdTQZw4vhNhug05hbXG7JOakdcFL4CxKeqV7JCxJtC9jesGI3uq6PAVaT1GxD0xlEf_eycaGl2ek4v6GmhJlltRBR6hNdmpsCum40Zl69sN20BdIl-YhXaoeBKSjmqoCykgsGby3L88JPuaNJab7mMq1K4RRqQSzfcewFS-RJjaMP26MyesWTMf7hV5rq",
-      refresh_token: 1461029417
+      token: "BQDVB0pazKW5KGtGiVl3H64u3DcJNwZIJDVu3mQsSxozaOwj36KrbvaZcxSDdBoJ_HyXd8CtXCTX8JeyJ9DF10odHzc_BM4aO7JXTn2kl0uewZBvOFYzkU4yFRswG6__jKHBmcTN1PzJsxe0UJ9CmQGH3i_DS2qHWP-qiW1VHSTlQy2bj7CvXwmWxArWIz1ggH_gD6D7epkohIwKGQxKXXrEuUBJ-1_8kHttnVEUSViC93YOZ6XgHqhbGMcafHPLbRawkpdySSYFaDifqgLhawsFCUulHOdMIjS6S8PnZlWth0IR1bhhYHbt",
+      refresh_token: "BQDVB0pazKW5KGtGiVl3H64u3DcJNwZIJDVu3mQsSxozaOwj36KrbvaZcxSDdBoJ_HyXd8CtXCTX8JeyJ9DF10odHzc_BM4aO7JXTn2kl0uewZBvOFYzkU4yFRswG6__jKHBmcTN1PzJsxe0UJ9CmQGH3i_DS2qHWP-qiW1VHSTlQy2bj7CvXwmWxArWIz1ggH_gD6D7epkohIwKGQxKXXrEuUBJ-1_8kHttnVEUSViC93YOZ6XgHqhbGMcafHPLbRawkpdySSYFaDifqgLhawsFCUulHOdMIjS6S8PnZlWth0IR1bhhYHbt",
+      token_expire: 20160923
     },
     extra: {
       raw_info: {
