@@ -29,6 +29,11 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
         expect(page).to have_content "my shows"
         expect(User.first.shows.count).to eq 11
       end
+
+      visit '/'
+
+      expect(current_path).to eq "/adamhundley/dashboard"
+      expect(page).to_not have_content "login"
     end
   end
 end

@@ -1,17 +1,19 @@
 class UserShowCreator
-  def initialize(user)
-    shows = bit_service.shows(user)
-    make_shows(shows, user)
+  attr_reader :artist
+
+  def initialize(artist, user)
+    @artist = artist
+    name = @artist.name
+    show = bit_service.show(name, user)
+    return if show.nil? || show.empty?
+    make_show(show, user)
   end
 
   def bit_service
     BitService.new
   end
 
-  def make_shows(shows, user)
-    shows.delete([])
-    shows = shows.compact
-    shows.map do |show|
+  def make_show(show, user)
       new_show = Show.find_or_create_by(
                     bit_id: show.first[:id].to_i,
                     title: show.first[:title],
@@ -25,7 +27,7 @@ class UserShowCreator
                     venue_latitude: show.first[:venue][:latitude].to_f,
                     venue_longitude: show.first[:venue][:longitude].to_f,
                     )
+      artist.shows << new_show
       user.shows << new_show
-    end
   end
 end

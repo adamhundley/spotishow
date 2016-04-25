@@ -9,11 +9,6 @@ class BitService
   #   name = name.split.join('%20')
   #   parse(connection.get("/artists/#{name}/events/.json?api_version=2.0"))
   # end
-  def shows(user)
-    user.artists.map do |artist|
-      show(artist.name, user)
-    end
-  end
 
   def show(name, user)
     if name.ascii_only?

@@ -20,6 +20,7 @@ class UserArtistCreator
         new_artist.update(spotify_image_url: artist[:images].first[:url])
       end
       user.artists << new_artist
+      UserShowCreator.new(new_artist, user)
     end
   end
 end

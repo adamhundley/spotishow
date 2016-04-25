@@ -6,8 +6,6 @@ module Api
     def location
       if current_user
         current_user.update(latitude: params[:lat], longitude: params[:lng])
-        current_user.shows = []
-        UserShowCreator.new(current_user)
       else
         session[:latitude] = params[:lat]
         session[:longitude] = params[:lng]
