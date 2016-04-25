@@ -14,19 +14,20 @@ RSpec.feature "UserUntracksAnArtist", type: :feature, js: true do
       click_on "login-button"
       visit "/adamhundley/artists"
 
-      user = User.find(1)
-      mayer = Artist.find_by(name: "John Mayer")
+      user = User.find_by(uid: "adamhundley")
+      huron = Artist.find_by(name: "Lord Huron")
 
       expect(user.artists.count).to eq 50
 
-      within("tr#artist-#{mayer.id}") do
+      within("tr#artist-#{huron.id}") do
         click_on "untrack"
       end
 
       wait_for_ajax
 
       expect(user.artists.count).to eq 49
-      expect(page).to_not have_content "John Mayer"
+      expect(user.shows.count).to eq 10
+      expect(page).to_not have_content "Lord Huron"
     end
   end
 end

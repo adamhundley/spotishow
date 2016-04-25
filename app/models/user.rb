@@ -32,7 +32,6 @@ class User < ActiveRecord::Base
       new_user.latitude      = location[:latitude]
       new_user.longitude     = location[:longitude]
       UserArtistCreator.new(new_user)
-      UserShowCreator.new(new_user)
     end
   end
 
