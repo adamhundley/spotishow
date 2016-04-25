@@ -5,7 +5,7 @@
       Spotishow</span></a></span>
     </div>
 
-    <div class="navbar-nav pull-right">
+    <div class="navbar-nav pull-right" id="navbar">
       <ul>
         <li class="dropdown pull-right current-user-dropdown">
           <a href="#" data-toggle="dropdown" style="color:#777; margin-top: 5px;" class="dropdown-toggle"><%= image_tag current_user.image, class:"current-user-image user-name" %><span class="user-name">
@@ -16,7 +16,7 @@
               <%= link_to "my dashboard", user_dashboard_path(current_user.uid) %>
             </li>
             <li>
-              <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span><%= link_to "my artists", user_artists_path(current_user.uid) %>
+              <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span><%= link_to "my artists", user_artists_path(current_user.uid), id:"my-artists" %>
             </li>
             <li>
               <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><%= link_to "my shows", user_shows_path(current_user.uid) %>
