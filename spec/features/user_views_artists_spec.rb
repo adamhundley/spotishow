@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "UserLogsInWithSpotify", type: :feature do
+RSpec.feature "UserViewsArtists", type: :feature do
   before(:each) do
     stub_omniauth
   end
@@ -8,7 +8,7 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
   scenario "User visits the root and logs in with spotify credintials" do
     VCR.use_cassette("feature#top_artists") do
       send_location
-      
+
       visit "/"
       click_on "login-button"
       click_on "my artists"
