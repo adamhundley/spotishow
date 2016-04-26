@@ -1,11 +1,17 @@
 <div class="artist-table-background">
   <div class="container artist-table">
     <table class="table artists-table">
-      <div class="row text-center add-artist col-sm-6 col-sm-offset-3" id="add-artist">
-        <form class="addArtist form-group">
-          <input type="text" id="name" name="name" placeholder="Enter an Artist" class="form-control ">
-          <input type="submit" name="OK" class="btn btn-success btn-md addArtist" data-uid="<%= current_user.uid %>" value="Search Artist" id="search">
-        </form>
+      <div class="row">
+        <div class="search-bar add-artist col-sm-8 col-sm-offset-2 col-xs-12" id="add-artist">
+          <form class="form-inline addArtist">
+            <div class="form-group col-sm-10 col-xs-8">
+              <input type="text_field" id="name" name="name" placeholder="Enter an Artist" class="form-control ">
+            </div>
+            <div class="form-group col-sm-2 col-xs-4">
+              <button type="submit" name="OK" class="btn btn-success btn-md addArtist " data-uid="<%= current_user.uid %>" value="Search Artist" id="search">Search Artist</button>
+            </div>
+          </form>
+        </div>
         <div class="spinner" style="display:none">
           <div class="rect1"></div>
           <div class="rect2"></div>
@@ -14,14 +20,17 @@
           <div class="rect5"></div>
         </div>
       </div>
+      <div class="row text-center artists-header">
+        <h1 class="artists-header-text">Below are your tracked artists. Add an artist above.</h1>
+      </div>
       <tbody class="artists-body">
         <% @artists.each do |artist| %>
           <div id="artist-<%= artist.id %>">
 
             <tr class="artists" id="artist-<%= artist.id %>">
               <td class="artists artist-images"><%= image_tag(artist.spotify_image_url, class:"artist-image") %></td>
-              <td class="artist-name"><%= artist.name %></td>
-              <td class="artists artist-facebook"><%= link_to image_tag("live.png", class:"live"), "#", {'data-target' => "#artist-#{artist.id}-modal", 'data-toggle' => "modal", 'class' => "artist-tour", 'id' => "artist-tour-#{artist.id}", 'data-artist' => "#{artist.name}", 'data-id' => "#{artist.id}" } %>
+              <td class="artist-name"><h1 class="artist-name-text"><%= artist.name %></h1></td>
+              <td class="artists artist-facebook"><%= link_to image_tag("calendar.png", class:"live"), "#", {'data-target' => "#artist-#{artist.id}-modal", 'data-toggle' => "modal", 'class' => "artist-tour", 'id' => "artist-tour-#{artist.id}", 'data-artist' => "#{artist.name}", 'data-id' => "#{artist.id}" } %>
 
 
                 <div class="modal fade" id="artist-<%= artist.id %>-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
@@ -47,10 +56,10 @@
                 </div>
               </td>
 
-              <td class="artists spotify"><%= link_to image_tag("listen-on-spotify.png", class:"listen-on-spotify"), artist.spotify_uri %></td>
+                <td class="artists spotify"><%= link_to image_tag("spotify.png", class:"listen-on-spotify"), artist.spotify_uri , {"data-toggle"=> "tooltip", "data-placement"=>"right", "title"=>"listen on spotify"}%></td>
 
               <td class="artists artists-untrack">
-                <button type="button" name="button" class="btn btn-danger btn-md untrack-artist" data-id="<%= artist.id %>", data-uid="<%= current_user.uid %>">untrack</button>
+                <%= link_to image_tag("close_red.png", class:"untrack"), "#", {'class' => "untrack-artist", 'data-id' => "#{artist.id}", 'data-uid' => "#{current_user.id}", "data-toggle"=> "tooltip", "data-placement"=>"right", "title"=>"remove from my artists"} %>
               </td>
             </tr>
           </div>

@@ -1,22 +1,23 @@
 .show-table-background {
-  background-image:url('https://images.unsplash.com/photo-1444990689320-bd2a7a839644?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4c7cfe1fefafc94b44fc477725ab1ca3');
+  background-image:
+  image-url('backgrounds/concert2.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height:100%;
   margin-top: -135px;
-  position: absolute;;
+  position: absolute;
 }
 
 .show-artist {
   font-size: 1.75em;
-  color: black;
+  color: white;
 }
 
 .show-date {
   font-size: 1.75em;
-  color: black;
+  color: white;
 }
 .ticket {
   width: 45px;
@@ -30,12 +31,12 @@
 
 .show-venue {
   font-size: 1.75em;
-  color: black;
+  color: white;
 }
 
 .show-location {
   font-size: 1.75em;
-  color: black;
+  color: white;
 }
 
 .shows-table {
@@ -76,6 +77,9 @@ thead {
   /* fallback */
 }
 
+.shows-body {
+  background-color: rgba(0,0,0, .4);
+}
 tbody td.show-date, thead th.show-date {
   width: 6%;
   float: left;

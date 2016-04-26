@@ -2,6 +2,9 @@ table.artists-table {
         width: 100%;
     }
 
+.artists-body {
+  background-color: rgba(0, 0, 0, .4);
+}
 
 thead.artists, tbody.artists-body, tr.artists, td.artists, th.artists { display: block; }
 
@@ -18,7 +21,7 @@ thead th {
 }
 
 tbody.artists-body {
-    height: 700px;
+    height: 650px;
     overflow-y: auto;
 }
 
@@ -29,23 +32,73 @@ thead {
 tbody td.artist-images, thead th.artist-images {
   width: 10%;
   float: left;
+  margin-left: 20px;
 }
 
 tbody td.artist-name, thead th.artist-name {
-  width: 50%;
+  width: 60%;
   float: left;
 }
 
 tbody td.artist-facebook, thead th.artist-facebook {
-  width: 15%;
+  width: 10%;
   float: left;
 }
 tbody td.spotify, thead th.spotify {
-  width: 15%;
+  width: 10%;
   float: left;
 }
 
 tbody td.artist-untrack, thead th.artist-untrack {
   width: 10%;
   float: left;
+}
+
+@media (max-width: 770px) {
+  .artists-header-text {
+    font-size: 1.2em;
+  }
+  .artist-image {
+    display:none;
+  }
+
+  .artist-name-text {
+    font-size: .5em;
+  }
+
+  .untrack {
+    height: 25px;
+    width: auto;
+  }
+  .live {
+    height: 25px;
+    width: auto;
+  }
+  .listen-on-spotify {
+    height: 25px;
+    width: auto;
+  }
+
+  tbody td.artist-name, thead th.artist-name {
+    width: 60%;
+    float: left;
+  }
+  tbody td.artist-images, thead th.artist-images {
+    width: 0%;
+    float: left;
+    margin-left: 0px;
+  }
+  tbody td.artist-facebook, thead th.artist-facebook {
+    width: 10%;
+    float: left;
+  }
+  tbody td.spotify, thead th.spotify {
+    width: 10%;
+    float: left;
+  }
+
+  tbody td.artist-untrack, thead th.artist-untrack {
+    width: 10%;
+    float: left;
+  }
 }
