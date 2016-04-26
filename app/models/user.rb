@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   validates :uid, uniqueness: true
-  has_many :user_artists
-  has_many :user_shows
+  has_many :user_artists, dependent: :destroy
+  has_many :user_shows, dependent: :destroy
   has_many :artists, through: :user_artists
   has_many :shows, through: :user_shows
 

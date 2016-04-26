@@ -7,7 +7,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    flash[:success] = "Sad to see you go #{current_user.name}. Come back again soon!"
     session.clear
     redirect_to root_path
   end

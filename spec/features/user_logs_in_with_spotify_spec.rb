@@ -11,7 +11,7 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
       send_location
 
       visit "/"
-      click_on "login-button"
+      click_on "login-button-1"
 
       expect(User.count).to eq 1
       expect(current_path).to eq "/adamhundley/dashboard"

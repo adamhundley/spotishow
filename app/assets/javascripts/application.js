@@ -16,6 +16,10 @@
 //= require bootstrap-sprockets
 
 $( document).ready(function() {
+  $('.carousel').carousel({
+    interval: 2500
+  })
+
 
   $('.locationIcon').click(function(){
     navigator.geolocation.getCurrentPosition(sendLocation);
@@ -43,12 +47,9 @@ $( document).ready(function() {
 
 
 
-  $('#login-button').click(function() {
-    $('#login-button').hide();
-    $('.welcome-text').hide();
-  });
-
-  $('#login-button').click(function() {
+  $('.login-button').click(function() {
+    $('.login-button').hide();
+    $('.slides-caption').hide();
     $('.spinner').show();
   });
 
