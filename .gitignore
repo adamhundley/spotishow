@@ -15,3 +15,5 @@
 /coverage
 # Ignore application configuration
 /config/application.yml
+
+/spec/req_cache

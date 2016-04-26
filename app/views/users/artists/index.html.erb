@@ -21,14 +21,27 @@
             <tr class="artists" id="artist-<%= artist.id %>">
               <td class="artists artist-images"><%= image_tag(artist.spotify_image_url, class:"artist-image") %></td>
               <td class="artist-name"><%= artist.name %></td>
-              <td class="artists artist-facebook"><%= link_to image_tag("live.png", class:"live"), artist.facebook_url, {'data-target' => ".artist-#{artist.id}-modal", 'data-toggle' => "modal"} %>
+              <td class="artists artist-facebook"><%= link_to image_tag("live.png", class:"live"), "#", {'data-target' => "#artist-#{artist.id}-modal", 'data-toggle' => "modal", 'class' => "artist-tour", 'id' => "artist-tour-#{artist.id}", 'data-artist' => "#{artist.name}", 'data-id' => "#{artist.id}" } %>
 
-                <button type="hidden" class="" data-toggle="modal" data-target=".artist-<%= artist.id %>-modal">Large modal</button>
 
-                <div class="modal fade artist-<%= artist.id %>-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal fade" id="artist-<%= artist.id %>-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
-                      <%= artist.name %>
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="modal-title text-center"><%= artist.name %></h2>
+                      </div>
+                        <table class="table">
+                          <div class="modal-spinner" style="display:none">
+                            <div class="rect1"></div>
+                            <div class="rect2"></div>
+                            <div class="rect3"></div>
+                            <div class="rect4"></div>
+                            <div class="rect5"></div>
+                          </div>
+                            <tbody id="show-modal-body-<%= artist.id %>">
+                          </tbody>
+                        </table>
                     </div>
                   </div>
                 </div>

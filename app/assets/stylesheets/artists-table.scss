@@ -1,4 +1,4 @@
-table {
+table.artists-table {
         width: 100%;
     }
 
@@ -17,7 +17,7 @@ thead th {
     /*text-align: left;*/
 }
 
-tbody {
+tbody.artists-body {
     height: 700px;
     overflow-y: auto;
 }

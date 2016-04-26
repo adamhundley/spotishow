@@ -42,7 +42,7 @@
   margin-top: 120px;
 }
 
-table {
+table.shows-table {
         width: 100%;
     }
 
@@ -61,9 +61,15 @@ thead th {
     /*text-align: left;*/
 }
 
-tbody {
-    height: 500px;
+tbody.shows-table {
+    height: 700px;
     overflow-y: auto;
+}
+
+.modal {
+  margin-top: 80px;
+  height: 80%;
+  overflow-y: auto;
 }
 
 thead {

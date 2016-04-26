@@ -17,7 +17,17 @@ module Api
       head :no_content
     end
 
+    def show
+      artist = Artist.find_by(name: artist_name)
+      find_shows(artist)
+      render json: artist.shows
+    end
+
     private
+
+      def find_shows(artist)
+        ArtistShowsCreator.new(artist)
+      end
 
       def find_artist(name, user)
         UserArtistCreator.artist(name, user)
