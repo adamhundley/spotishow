@@ -10,7 +10,7 @@ RSpec.feature "UserViewsArtists", type: :feature do
       send_location
 
       visit "/"
-      click_on "login-button"
+      click_on "login-button-1"
       click_on "my artists"
       expect(current_path).to eq "/adamhundley/artists"
 

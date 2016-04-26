@@ -12,7 +12,7 @@ RSpec.feature "UserViewsShows", type: :feature do
 
       visit "/"
 
-      click_on "login-button"
+      click_on "login-button-1"
 
       click_on "my shows"
 

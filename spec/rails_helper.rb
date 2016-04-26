@@ -110,7 +110,7 @@ def stub_omniauth
       image: "https://scontent.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p200x200/12049656_10100204503401754_3715087154579945830_n.jpg?oh=f7d96813ab87b164df6f41f4265d7d7b&oe=57B548E1"
     },
     credentials: {
-      token: "BQDAVYmHRKmwk4kSjhaW8xcH8wzuqhP3yN5gJFlo31Azspz17G8bg7zYyV0EvLOPz-zHd9LqaHjB6kGUbULgW-mJcM1HaMvfLAqYn2TW3L63O5ME8qqg1APmKmb6oo9ybpGacqkE6ryBL446kIIp-stgjlbPBUErx7QbsIGK2-OUJsIB5tbCyHlE6OxFEIZF5BW_FIT6AXSskD1WI-iZsWi-wptCSkbMW_hdUxrhrByMwNn8IPC6K1o-I6vN4jCscCmB3f1EjTEgrq3XznjWtTzoSqfbc8GTx9v-g0SDWgOCATsgE5IFMDft",
+      token: "BQBlvd_zF8xzQ1HnttlHMny_bJJM9Hw8m-Yv69MCrgRu_aSlu9JJOHxRPQO-KtwmOkuz7siWdcaoDxHTwIwhK94catsCzfGwYMFQIDrcLbuTl6kCTp2_szyVIPTN-cSCZ2Y3RnFzphH2t2Cw96CFSi4gpM4UtDEjz3em7yJIJAUA7QqDscHwmkX4Nm3DHhToqUbyVpsJYw_e5u-8d_7dTNFINckVCYiR9Dhm-ifl6-OLVVFDlGsZjVpoDkY3kicSh1T070QHm545pryLlMpkdt_L-1EoDue50KW8h6sCOSJe0iQM5weP0m9H",
       refresh_token: "BQDVB0pazKW5KGtGiVl3H64u3DcJNwZIJDVu3mQsSxozaOwj36KrbvaZcxSDdBoJ_HyXd8CtXCTX8JeyJ9DF10odHzc_BM4aO7JXTn2kl0uewZBvOFYzkU4yFRswG6__jKHBmcTN1PzJsxe0UJ9CmQGH3i_DS2qHWP-qiW1VHSTlQy2bj7CvXwmWxArWIz1ggH_gD6D7epkohIwKGQxKXXrEuUBJ-1_8kHttnVEUSViC93YOZ6XgHqhbGMcafHPLbRawkpdySSYFaDifqgLhawsFCUulHOdMIjS6S8PnZlWth0IR1bhhYHbt",
       token_expire: 20160923
     },

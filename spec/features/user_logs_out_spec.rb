@@ -11,13 +11,13 @@ RSpec.feature "UserLogsOut", type: :feature do
 
       visit "/"
 
-      click_on "login-button"
+      click_on "login-button-1"
 
       expect(page).to have_link "logout"
 
       click_on "logout"
 
-      expect(page).to have_content "Sad to see you go Adam Hundley. Come back again soon!"
+      # expect(page).to have_content "Sad to see you go Adam Hundley. Come back again soon!"
     end
   end
 end
