@@ -12,19 +12,21 @@
           <%= current_user.uid %></span><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li>
-              <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-              <%= link_to "my dashboard", user_dashboard_path(current_user.uid) %>
+              <i class="glyphicon glyphicon-user" aria-hidden="true">
+              <%= link_to "my dashboard", user_dashboard_path(current_user.uid), class: "menu-item" %></i>
             </li>
             <li>
-              <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span><%= link_to "my artists", user_artists_path(current_user.uid), id:"my-artists" %>
+              <i class="glyphicon glyphicon-headphones" aria-hidden="true">
+              <%= link_to "my artists", user_artists_path(current_user.uid), class: "menu-item", id:"my-artists" %></i>
             </li>
             <li>
-              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><%= link_to "my shows", user_shows_path(current_user.uid) %>
+              <i class="glyphicon glyphicon-eye-open" aria-hidden="true">
+              <%= link_to "my shows", user_shows_path(current_user.uid), class: "menu-item" %></i>
             </li>
             <li role="separator" class="divider"></li>
             <li>
-              <i class="glyphicon glyphicon-log-out" aria-hidden="true"></i>
-              <%= link_to "logout", logout_path, method: :delete %>
+              <i class="glyphicon glyphicon-log-out" aria-hidden="true">
+              <%= link_to "logout", logout_path, method: :delete, class: "menu-item" %></i>
             </li>
           </ul>
         </li>
