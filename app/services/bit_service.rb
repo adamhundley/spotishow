@@ -4,11 +4,10 @@ class BitService
     connection.params['app_id'] = "making_the_band"
   end
 
-# http://api.bandsintown.com/artists/Skrillex/events/search.json?api_version=2.0&app_id=YOUR_APP_ID&location=San+Diego,CA&radius=10
-  # def artist(name)
-  #   name = name.split.join('%20')
-  #   parse(connection.get("/artists/#{name}/events/.json?api_version=2.0"))
-  # end
+  def shows(name)
+    name = name.split.join('%20')
+    parse(connection.get("/artists/#{name}/events.json?api_version=2.0"))
+  end
 
   def show(name, user)
     if name.ascii_only?

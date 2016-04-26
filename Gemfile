@@ -37,6 +37,7 @@ group :development do
   gem 'spring'
   gem 'quiet_assets'
   gem 'chromedriver-helper'
+  gem 'puffing-billy'
 end
 
 group :test do
