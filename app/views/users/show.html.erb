@@ -1,32 +1,64 @@
 <div class="artist-dashboard-background">
   <div class="container dashboard-container">
-
-    <div class="col-sm-4 text-center" id="my-location">
-      <span class="dashboard-text">my location</span><br>
-      <span class="dashboard-text">
-        <%= current_user.location.upcase if current_user.location %></span><br>
-        <%= link_to image_tag("update-location.png", class:"locationIcon"), "#"%>
-    </div>
-    <div class="col-sm-4 text-center" id="my-artists">
-      <span class="dashboard-text">my artists</span><br>
-      <div id="odometer" class="odometer">0</div>
-
-      <script type="text/javascript">
-        setTimeout(function(){
-        odometer.innerHTML = <%= current_user.artists.count %>;
-      }, 500);
-      </script>
-
-    </div>
-    <div class="col-sm-4 text-center" id="my-shows">
-      <span class="dashboard-text">my shows</span><br>
-
-      <div id="shodometer" class="odometer">0</div>
+    <div class="row">
+      <div class="col-md-4 text-center dashboard" id="my-artists">
+        <span class="dashboard-text">artists:</span><br>
+        <div id="odometer" class="odometer">0</div>
         <script type="text/javascript">
           setTimeout(function(){
-          shodometer.innerHTML = <%= current_user.shows.count %>;
+          odometer.innerHTML = <%= current_user.artists.count %>;
         }, 500);
         </script>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 text-center dashboard" id="my-shows">
+        <span class="dashboard-text">shows:</span><br>
+        <div id="shodometer" class="odometer">0</div>
+          <script type="text/javascript">
+            setTimeout(function(){
+            shodometer.innerHTML = <%= current_user.shows.count %>;
+          }, 500);
+          </script>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 text-center dashboard" id="my-location">
+        <span class="dashboard-text">location:</span><br>
+        <span class="dashboard-text" id="dashboardLocation">
+          <%= current_user.location.upcase if current_user.location %></span><br><br>
+          <!-- <%= link_to image_tag("update-location.png", class:"locationIcon"), "#"%> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 text-center dashboard">
+        <button type="button" class="btn btn-success btn-md"data-toggle="modal" data-target="#locationModal">Update My Location</button>
+
+        <div class="modal fade" tabindex="-1" role="dialog" id="locationModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title">Update Location for New Shows</h2>
+                <h4 class="modal-title">This will remove all your current shows</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-group locationUpdate">
+                  <input type="text" id="location" name="location" placeholder="New Location" class="form-control" value="<%= current_user.location %>">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Nevermind</button>
+                <button type="submit" class="btn btn-success btn-md locationUpdate" data-uid="<%= current_user.uid %>" id="update">Update Location</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+      </div>
     </div>
   </div>
+  </div>
+  <%= render partial: "shared/welcome_spinner" %>
 </div>

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: {format: :json} do
     resources :artists, only: [:show, :create, :destroy], module: "artists", param: :name
-    resources :location, only: [:create], module: "location"
+    resources :location, only: [:create, :update], module: "location"
   end
 
   namespace :users, path: ":user_name", as: :user do

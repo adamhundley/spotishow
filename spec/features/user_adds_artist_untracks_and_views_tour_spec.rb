@@ -33,7 +33,7 @@ RSpec.feature "UserAddsAnArtist", type: :feature, js: true do
 
       visit "/adamhundley/artists"
 
-      expect(page).to have_content "Sufjan Stevens"
+      expect(page).to have_content "SUFJAN STEVENS"
 
       huron = Artist.find_by(name: "Lord Huron")
 

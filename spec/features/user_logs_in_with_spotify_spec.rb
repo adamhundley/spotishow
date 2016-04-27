@@ -17,16 +17,16 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
       expect(current_path).to eq "/adamhundley/dashboard"
 
       within("div#my-location") do
-        expect(page).to have_content "my location"
+        expect(page).to have_content "location"
       end
 
       within("div#my-artists") do
-        expect(page).to have_content "my artists"
+        expect(page).to have_content "artists"
         expect(User.first.artists.count).to eq 50
       end
 
       within("div#my-shows") do
-        expect(page).to have_content "my shows"
+        expect(page).to have_content "shows"
         expect(User.first.shows.count).to eq 11
       end
 

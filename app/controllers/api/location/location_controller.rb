@@ -9,5 +9,11 @@ module Api
       end
       head :no_content
     end
+
+    def update
+      current_user.update(location: params[:location])
+      UserShowCreator.update_shows(current_user)
+      render json: current_user.shows.count
+    end
   end
 end

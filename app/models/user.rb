@@ -11,10 +11,9 @@ class User < ActiveRecord::Base
     end
   end
 
+  # after_validation :reverse_geocode
   geocoded_by :location
   after_validation :geocode
-  after_validation :reverse_geocode,
-    :if => lambda{ |obj| obj.location_changed? }
 
 
   def self.from_omniauth(auth_info, location)
