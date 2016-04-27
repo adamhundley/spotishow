@@ -59,7 +59,7 @@ $( document).ready(function() {
 
 
 
-  $('.untrack-artist').click(function() {
+  $(document).on('click', '.untrack-artist', function() {
     var id = $(this).attr('data-id')
     var uid = $(this).attr('data-uid')
     $.ajax({

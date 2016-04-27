@@ -6,10 +6,10 @@ module Api
     end
 
     def destroy
-      if !current_user.artists.find(params[:id]).shows.empty?
-        current_user.artists.delete(params[:id])
+      if current_user.shows.find_by(artist_id: params[:id]) != nil
         show = current_user.shows.find_by(artist_id: params[:id])
         current_user.shows.delete(show.id)
+        current_user.artists.delete(params[:id])
       else
         current_user.artists.delete(params[:id])
       end
