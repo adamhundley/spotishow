@@ -54,7 +54,20 @@ tbody td.artist-untrack, thead th.artist-untrack {
   float: left;
 }
 
+@media (max-width: 1200px) {
+  tbody.artists-body {
+      height: 550px;
+      overflow-y: auto;
+  }
+}
+
 @media (max-width: 770px) {
+  .search-bar {
+    margin-top: 0px;
+  }
+  .artists-header {
+    margin-top: -10px;
+  }
   .artists-header-text {
     font-size: 1.2em;
   }
@@ -67,16 +80,22 @@ tbody td.artist-untrack, thead th.artist-untrack {
   }
 
   .untrack {
-    height: 25px;
+    height: 30px;
     width: auto;
+    margin-left: 5px;
   }
   .live {
-    height: 25px;
+    height: 30px;
     width: auto;
   }
   .listen-on-spotify {
-    height: 25px;
+    height: 30px;
     width: auto;
+  }
+
+  tbody.artists-body {
+      height: 500px;
+      overflow-y: auto;
   }
 
   tbody td.artist-name, thead th.artist-name {
@@ -101,4 +120,36 @@ tbody td.artist-untrack, thead th.artist-untrack {
     width: 10%;
     float: left;
   }
+}
+
+@media (max-width: 375px) {
+  tbody.artists-body {
+      height: 430px;
+      overflow-y: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .artist-name-text {
+    font-size: .5em;
+  }
+
+  tbody.artists-body {
+      height: 330px;
+      overflow-y: auto;
+  }
+  .untrack {
+    height: 20px;
+    width: auto;
+    margin-left: 5px;
+  }
+  .live {
+    height: 20px;
+    width: auto;
+  }
+  .listen-on-spotify {
+    height: 20px;
+    width: auto;
+  }
+
 }

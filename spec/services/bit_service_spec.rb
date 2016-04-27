@@ -18,16 +18,4 @@ describe BitService do
       end
     end
   end
-
-  # context "#artist" do
-  #   scenario "return a show" do
-  #     VCR.use_cassette("bit_service#artist") do
-  #       service = BitService.new
-  #       artist = service.artist("Mutemath")
-  #       show = artist.first
-  #       expect(show[:artists].first[:name]).to eq "MUTEMATH"
-  #     end
-  #   end
-  # end
-  
 end

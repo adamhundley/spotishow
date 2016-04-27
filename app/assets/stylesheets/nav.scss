@@ -26,7 +26,6 @@
   text-decoration: none;
 }
 
-
 .menu-item {
   color: black;
   text-decoration: none;
@@ -59,4 +58,14 @@
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid white;
+}
+
+@media (max-width: 770px) {
+  .biz-name{
+    display: none;
+  }
+
+  .user-name {
+    display: none;
+  }
 }

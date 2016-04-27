@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 25 Apr 2016 21:41:08 GMT
+      - Wed, 27 Apr 2016 23:00:24 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -58,7 +58,7 @@ http_interactions:
               },
               "followers" : {
                 "href" : null,
-                "total" : 444804
+                "total" : 445396
               },
               "genres" : [ ],
               "href" : "https://api.spotify.com/v1/artists/0Ty63ceoRnnJKVEYP0VQpk",
@@ -93,7 +93,7 @@ http_interactions:
               "id" : "5e8e4l6G9xt5BqjbDJocZF",
               "images" : [ ],
               "name" : "Anoushka Shankar and Karsh Kale feat. Sting",
-              "popularity" : 18,
+              "popularity" : 17,
               "type" : "artist",
               "uri" : "spotify:artist:5e8e4l6G9xt5BqjbDJocZF"
             }, {
@@ -102,7 +102,7 @@ http_interactions:
               },
               "followers" : {
                 "href" : null,
-                "total" : 866
+                "total" : 887
               },
               "genres" : [ ],
               "href" : "https://api.spotify.com/v1/artists/3EoFVszwsvsw0Cr7b4ncaD",
@@ -126,22 +126,6 @@ http_interactions:
               "uri" : "spotify:artist:3EoFVszwsvsw0Cr7b4ncaD"
             }, {
               "external_urls" : {
-                "spotify" : "https://open.spotify.com/artist/1DvzZuRjAqpHoZYVn8Z6b7"
-              },
-              "followers" : {
-                "href" : null,
-                "total" : 64
-              },
-              "genres" : [ ],
-              "href" : "https://api.spotify.com/v1/artists/1DvzZuRjAqpHoZYVn8Z6b7",
-              "id" : "1DvzZuRjAqpHoZYVn8Z6b7",
-              "images" : [ ],
-              "name" : "Jeff Beck With Sting",
-              "popularity" : 8,
-              "type" : "artist",
-              "uri" : "spotify:artist:1DvzZuRjAqpHoZYVn8Z6b7"
-            }, {
-              "external_urls" : {
                 "spotify" : "https://open.spotify.com/artist/7aSUCRetIIF7cr1rhdq8Ld"
               },
               "followers" : {
@@ -156,6 +140,22 @@ http_interactions:
               "popularity" : 8,
               "type" : "artist",
               "uri" : "spotify:artist:7aSUCRetIIF7cr1rhdq8Ld"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/1DvzZuRjAqpHoZYVn8Z6b7"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 64
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/1DvzZuRjAqpHoZYVn8Z6b7",
+              "id" : "1DvzZuRjAqpHoZYVn8Z6b7",
+              "images" : [ ],
+              "name" : "Jeff Beck With Sting",
+              "popularity" : 8,
+              "type" : "artist",
+              "uri" : "spotify:artist:1DvzZuRjAqpHoZYVn8Z6b7"
             }, {
               "external_urls" : {
                 "spotify" : "https://open.spotify.com/artist/1oG969i7R4zedTkzN74a40"
@@ -209,7 +209,7 @@ http_interactions:
                 "width" : 64
               } ],
               "name" : "The Stingers",
-              "popularity" : 14,
+              "popularity" : 13,
               "type" : "artist",
               "uri" : "spotify:artist:48c4I0DZZL4lCYceUwUZVY"
             }, {
@@ -234,7 +234,7 @@ http_interactions:
               },
               "followers" : {
                 "href" : null,
-                "total" : 372
+                "total" : 373
               },
               "genres" : [ ],
               "href" : "https://api.spotify.com/v1/artists/6Z3V0wUuOHqAa7R7qhoVW9",
@@ -286,6 +286,34 @@ http_interactions:
               "uri" : "spotify:artist:2qgmXBX4LOVNJ0M8GHHQ4q"
             }, {
               "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3ZXmmlVgfGsYuT6kMDIyKo"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 95
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/3ZXmmlVgfGsYuT6kMDIyKo",
+              "id" : "3ZXmmlVgfGsYuT6kMDIyKo",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/2f1150677027a41c1bd5c15cdf0b1a1ac8151b40",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/e5fc11dc6e2a49cab38a6ac827e0a102d12036d1",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/798fccec12f721f1166924dccd4bf69d276ccab6",
+                "width" : 64
+              } ],
+              "name" : "The Sting-Rays",
+              "popularity" : 7,
+              "type" : "artist",
+              "uri" : "spotify:artist:3ZXmmlVgfGsYuT6kMDIyKo"
+            }, {
+              "external_urls" : {
                 "spotify" : "https://open.spotify.com/artist/7FVXXP3lzthrIXUZKi0lPG"
               },
               "followers" : {
@@ -312,34 +340,6 @@ http_interactions:
               "popularity" : 18,
               "type" : "artist",
               "uri" : "spotify:artist:7FVXXP3lzthrIXUZKi0lPG"
-            }, {
-              "external_urls" : {
-                "spotify" : "https://open.spotify.com/artist/3ZXmmlVgfGsYuT6kMDIyKo"
-              },
-              "followers" : {
-                "href" : null,
-                "total" : 93
-              },
-              "genres" : [ ],
-              "href" : "https://api.spotify.com/v1/artists/3ZXmmlVgfGsYuT6kMDIyKo",
-              "id" : "3ZXmmlVgfGsYuT6kMDIyKo",
-              "images" : [ {
-                "height" : 640,
-                "url" : "https://i.scdn.co/image/2f1150677027a41c1bd5c15cdf0b1a1ac8151b40",
-                "width" : 640
-              }, {
-                "height" : 300,
-                "url" : "https://i.scdn.co/image/e5fc11dc6e2a49cab38a6ac827e0a102d12036d1",
-                "width" : 300
-              }, {
-                "height" : 64,
-                "url" : "https://i.scdn.co/image/798fccec12f721f1166924dccd4bf69d276ccab6",
-                "width" : 64
-              } ],
-              "name" : "The Sting-Rays",
-              "popularity" : 7,
-              "type" : "artist",
-              "uri" : "spotify:artist:3ZXmmlVgfGsYuT6kMDIyKo"
             }, {
               "external_urls" : {
                 "spotify" : "https://open.spotify.com/artist/7vZgYqMEApgWpMpXMSJj1o"
@@ -537,5 +537,5 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Mon, 25 Apr 2016 21:41:08 GMT
+  recorded_at: Wed, 27 Apr 2016 23:00:24 GMT
 recorded_with: VCR 3.0.1
