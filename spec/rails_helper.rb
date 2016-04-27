@@ -110,7 +110,7 @@ def stub_omniauth
       image: "https://scontent.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p200x200/12049656_10100204503401754_3715087154579945830_n.jpg?oh=f7d96813ab87b164df6f41f4265d7d7b&oe=57B548E1"
     },
     credentials: {
-      token: "BQBlvd_zF8xzQ1HnttlHMny_bJJM9Hw8m-Yv69MCrgRu_aSlu9JJOHxRPQO-KtwmOkuz7siWdcaoDxHTwIwhK94catsCzfGwYMFQIDrcLbuTl6kCTp2_szyVIPTN-cSCZ2Y3RnFzphH2t2Cw96CFSi4gpM4UtDEjz3em7yJIJAUA7QqDscHwmkX4Nm3DHhToqUbyVpsJYw_e5u-8d_7dTNFINckVCYiR9Dhm-ifl6-OLVVFDlGsZjVpoDkY3kicSh1T070QHm545pryLlMpkdt_L-1EoDue50KW8h6sCOSJe0iQM5weP0m9H",
+      token: "BQBP14wozosOfEc8y9lMJ56dAGa1dmKKV-HUk_pHGPoOCwJ4DwbbHT_OFz0fjJ2CBToBV-AHIvIYOC9K5WodbDCmnn0nq9uCD2RXIsO2OaDokJXHg1Ns9i_CxrPtEgsp7h-YrBj51A_63J9wCT5_EKkHX0piEW8pcD8GErH6uAx_X99Bnw06TcNCldOaI-NExi0_Qa-c2syeDz8suyP24-LUVn3gdbvgoGgY88M5o8iq1ZdGPBlWznxRrmiE0hiYTZJ7TrpT6-cjK4OtfWhhlFkbu4G75VYkU7qwQGbD_jRU_jHBHyYyb-fU",
       refresh_token: "BQDVB0pazKW5KGtGiVl3H64u3DcJNwZIJDVu3mQsSxozaOwj36KrbvaZcxSDdBoJ_HyXd8CtXCTX8JeyJ9DF10odHzc_BM4aO7JXTn2kl0uewZBvOFYzkU4yFRswG6__jKHBmcTN1PzJsxe0UJ9CmQGH3i_DS2qHWP-qiW1VHSTlQy2bj7CvXwmWxArWIz1ggH_gD6D7epkohIwKGQxKXXrEuUBJ-1_8kHttnVEUSViC93YOZ6XgHqhbGMcafHPLbRawkpdySSYFaDifqgLhawsFCUulHOdMIjS6S8PnZlWth0IR1bhhYHbt",
       token_expire: 20160923
     },

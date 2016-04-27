@@ -12,7 +12,6 @@ Rails.application.routes.draw do
     get "/dashboard", action: "show", as: :dashboard
     get "/artists", to: "artists#index", as: :artists
     get "/shows", to: "shows#index", as: :shows
-    patch "/", action: "update", params: :id
   end
 
   get "/auth/spotify", as: :spotify_login

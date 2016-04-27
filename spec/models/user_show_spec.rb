@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe UserShow, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe UserShow do
+    it { should belong_to :show }
+    it { should belong_to :user }
+  end
 end
