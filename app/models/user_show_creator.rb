@@ -13,6 +13,13 @@ class UserShowCreator
     BitService.new
   end
 
+  def self.update_shows(user)
+    user.shows = []
+    user.artists.each do |artist|
+      UserShowCreator.new(artist, user)
+    end
+  end
+
   def make_show(show, user)
       new_show = Show.find_or_create_by(
                     bit_id: show.first[:id].to_i,

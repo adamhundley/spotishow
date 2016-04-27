@@ -5,7 +5,7 @@
 
 .dashboard-text {
   color: white;
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 .odometer {
     font-size: 75px;
@@ -25,4 +25,8 @@
 
 .dashboard-container {
   margin-top: 175px;
+}
+
+.dashboard {
+  background-color: rgba(0,0,0, .5);
 }

@@ -1,6 +1,5 @@
 module Api
   class Artists::ArtistsController < ApiController
-
     def create
       find_artist(params[:name], current_user)
       render json: Artist.find_by(name: params[:name])
