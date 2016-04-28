@@ -12,6 +12,7 @@ module Api
 
     def update
       current_user.update(location: params[:location])
+      current_user.update_token
       UserShowCreator.update_shows(current_user)
       render json: current_user.shows.count
     end

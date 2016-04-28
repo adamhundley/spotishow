@@ -7,6 +7,4 @@ class Artist < ActiveRecord::Base
   validates :spotify_id, presence: true, uniqueness: true
   validates :spotify_uri, presence: true
   validates :spotify_popularity, presence: true
-
-  # default_scope { order('created_at DESC') }
 end

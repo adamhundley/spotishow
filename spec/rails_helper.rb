@@ -6,6 +6,8 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'spec_helper'
 require 'rspec/rails'
 require 'support/wait_for_ajax'
+require 'support/stub_omniauth'
+require 'support/send_location'
 require 'billy/rspec'
 
 ActiveRecord::Migration.maintain_test_schema!
@@ -36,33 +38,13 @@ RSpec.configure do |config|
   end
 
   config.include FactoryGirl::Syntax::Methods
-  # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
-  # If you're not using ActiveRecord, or you'd prefer not to run each of your
-  # examples within a transaction, remove the following line or assign false
-  # instead of true.
   config.use_transactional_fixtures = false
 
-  # RSpec Rails can automatically mix in different behaviours to your tests
-  # based on their file location, for example enabling you to call `get` and
-  # `post` in specs under `spec/controllers`.
-  #
-  # You can disable this behaviour by removing the line below, and instead
-  # explicitly tag your specs with their type, e.g.:
-  #
-  #     RSpec.describe UsersController, :type => :controller do
-  #       # ...
-  #     end
-  #
-  # The different available types are documented in the features, such as in
-  # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 
-  # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
-  # arbitrary gems may also be filtered via:
-  # config.filter_gems_from_backtrace("gem name")
 end
 
 Capybara.javascript_driver = :selenium_chrome_billy
@@ -93,35 +75,3 @@ Billy.configure do |c|
 end
 
 Billy.proxy.reset_cache
-
-def stub_omniauth
-  OmniAuth.config.test_mode = true
-  OmniAuth.config.mock_auth[:spotify] = OmniAuth::AuthHash.new({
-    provider: "spotify",
-    uid: "adamhundley",
-    info: {
-      name: "Adam Hundley",
-      screen_name: "adamhundley",
-      email: "adamhundley@gmail.com",
-
-      urls: {
-        spotify: "https://open.spotify.com/user/adamhundley"
-      },
-      image: "https://scontent.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p200x200/12049656_10100204503401754_3715087154579945830_n.jpg?oh=f7d96813ab87b164df6f41f4265d7d7b&oe=57B548E1"
-    },
-    credentials: {
-      token: "BQBP14wozosOfEc8y9lMJ56dAGa1dmKKV-HUk_pHGPoOCwJ4DwbbHT_OFz0fjJ2CBToBV-AHIvIYOC9K5WodbDCmnn0nq9uCD2RXIsO2OaDokJXHg1Ns9i_CxrPtEgsp7h-YrBj51A_63J9wCT5_EKkHX0piEW8pcD8GErH6uAx_X99Bnw06TcNCldOaI-NExi0_Qa-c2syeDz8suyP24-LUVn3gdbvgoGgY88M5o8iq1ZdGPBlWznxRrmiE0hiYTZJ7TrpT6-cjK4OtfWhhlFkbu4G75VYkU7qwQGbD_jRU_jHBHyYyb-fU",
-      refresh_token: "BQDVB0pazKW5KGtGiVl3H64u3DcJNwZIJDVu3mQsSxozaOwj36KrbvaZcxSDdBoJ_HyXd8CtXCTX8JeyJ9DF10odHzc_BM4aO7JXTn2kl0uewZBvOFYzkU4yFRswG6__jKHBmcTN1PzJsxe0UJ9CmQGH3i_DS2qHWP-qiW1VHSTlQy2bj7CvXwmWxArWIz1ggH_gD6D7epkohIwKGQxKXXrEuUBJ-1_8kHttnVEUSViC93YOZ6XgHqhbGMcafHPLbRawkpdySSYFaDifqgLhawsFCUulHOdMIjS6S8PnZlWth0IR1bhhYHbt",
-      token_expire: 20160923
-    },
-    extra: {
-      raw_info: {
-        href: "https://api.spotify.com/v1/users/adamhundley"
-      }
-    }
-  })
-end
-
-def send_location
-  page.driver.post('/api/location', {lat: 39.7392, lng: -104.9903}, :format => 'json')
-end
