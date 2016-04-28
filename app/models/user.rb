@@ -11,7 +11,6 @@ class User < ActiveRecord::Base
     end
   end
 
-  # after_validation :reverse_geocode
   geocoded_by :location
   after_validation :geocode
 
