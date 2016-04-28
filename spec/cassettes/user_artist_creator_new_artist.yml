@@ -1,0 +1,581 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?q=Sting&type=artist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 28 Apr 2016 15:57:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "artists" : {
+            "href" : "https://api.spotify.com/v1/search?query=Sting&offset=0&limit=20&type=artist",
+            "items" : [ {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/0Ty63ceoRnnJKVEYP0VQpk"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 445571
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/0Ty63ceoRnnJKVEYP0VQpk",
+              "id" : "0Ty63ceoRnnJKVEYP0VQpk",
+              "images" : [ {
+                "height" : 546,
+                "url" : "https://i.scdn.co/image/4a739143ea298c80b9401b96a7404575a075cf36",
+                "width" : 500
+              }, {
+                "height" : 218,
+                "url" : "https://i.scdn.co/image/79ce9b529ca3c1cd157d48e9952b3c1744ece95f",
+                "width" : 200
+              }, {
+                "height" : 70,
+                "url" : "https://i.scdn.co/image/9b47245198bf403e2f644f809e261ef73e8ca6dc",
+                "width" : 64
+              } ],
+              "name" : "Sting",
+              "popularity" : 69,
+              "type" : "artist",
+              "uri" : "spotify:artist:0Ty63ceoRnnJKVEYP0VQpk"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/5e8e4l6G9xt5BqjbDJocZF"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 284
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/5e8e4l6G9xt5BqjbDJocZF",
+              "id" : "5e8e4l6G9xt5BqjbDJocZF",
+              "images" : [ ],
+              "name" : "Anoushka Shankar and Karsh Kale feat. Sting",
+              "popularity" : 17,
+              "type" : "artist",
+              "uri" : "spotify:artist:5e8e4l6G9xt5BqjbDJocZF"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3EoFVszwsvsw0Cr7b4ncaD"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 890
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/3EoFVszwsvsw0Cr7b4ncaD",
+              "id" : "3EoFVszwsvsw0Cr7b4ncaD",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/12089623d59169dfc46ac003d7692d0a5c205611",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/62b0b192f17cc7ad5a97acb0e1744d57185b6ae6",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/b0729715617d36a52ce20a809dbbad16b4f87e5b",
+                "width" : 64
+              } ],
+              "name" : "Byron Stingily",
+              "popularity" : 29,
+              "type" : "artist",
+              "uri" : "spotify:artist:3EoFVszwsvsw0Cr7b4ncaD"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/7aSUCRetIIF7cr1rhdq8Ld"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 93
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/7aSUCRetIIF7cr1rhdq8Ld",
+              "id" : "7aSUCRetIIF7cr1rhdq8Ld",
+              "images" : [ ],
+              "name" : "Stevie Wonder With Sting",
+              "popularity" : 8,
+              "type" : "artist",
+              "uri" : "spotify:artist:7aSUCRetIIF7cr1rhdq8Ld"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/1DvzZuRjAqpHoZYVn8Z6b7"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 65
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/1DvzZuRjAqpHoZYVn8Z6b7",
+              "id" : "1DvzZuRjAqpHoZYVn8Z6b7",
+              "images" : [ ],
+              "name" : "Jeff Beck With Sting",
+              "popularity" : 8,
+              "type" : "artist",
+              "uri" : "spotify:artist:1DvzZuRjAqpHoZYVn8Z6b7"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/1oG969i7R4zedTkzN74a40"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 163
+              },
+              "genres" : [ "traditional ska" ],
+              "href" : "https://api.spotify.com/v1/artists/1oG969i7R4zedTkzN74a40",
+              "id" : "1oG969i7R4zedTkzN74a40",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/585fa766e76e99398ae01921219d81a278d8b8e0",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/e41c81d9bf825b18884127994c7a8f361fcd92bb",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/94117455481357cea8fd5fec59a3c24ed6d4d25e",
+                "width" : 64
+              } ],
+              "name" : "The Stingers ATX",
+              "popularity" : 9,
+              "type" : "artist",
+              "uri" : "spotify:artist:1oG969i7R4zedTkzN74a40"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/48c4I0DZZL4lCYceUwUZVY"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 115
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/48c4I0DZZL4lCYceUwUZVY",
+              "id" : "48c4I0DZZL4lCYceUwUZVY",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/8a510fe3eb4594f546ca23a9fa4cd1f448da1771",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/5d5ec8e273bfe1cf25ab1afdcaa4a12d06029827",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/e5c33d8f2c58cee586a5c688ccc9385f4f0586a8",
+                "width" : 64
+              } ],
+              "name" : "The Stingers",
+              "popularity" : 13,
+              "type" : "artist",
+              "uri" : "spotify:artist:48c4I0DZZL4lCYceUwUZVY"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/4Rk1l9rvZpBXgyjAjriCfU"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 44
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/4Rk1l9rvZpBXgyjAjriCfU",
+              "id" : "4Rk1l9rvZpBXgyjAjriCfU",
+              "images" : [ ],
+              "name" : "Southland Stingers",
+              "popularity" : 13,
+              "type" : "artist",
+              "uri" : "spotify:artist:4Rk1l9rvZpBXgyjAjriCfU"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/6Z3V0wUuOHqAa7R7qhoVW9"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 374
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/6Z3V0wUuOHqAa7R7qhoVW9",
+              "id" : "6Z3V0wUuOHqAa7R7qhoVW9",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/57e8def131966fce7c2b0ad743b7b3e1434f44f1",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/bb1c7f69ef736ae9b3c2ffcda6204f0cd593015c",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/32c8ef7f7c9e1439fa360c67afb46b3a84481410",
+                "width" : 64
+              } ],
+              "name" : "B. Bumble & The Stingers",
+              "popularity" : 20,
+              "type" : "artist",
+              "uri" : "spotify:artist:6Z3V0wUuOHqAa7R7qhoVW9"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/2qgmXBX4LOVNJ0M8GHHQ4q"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 171
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/2qgmXBX4LOVNJ0M8GHHQ4q",
+              "id" : "2qgmXBX4LOVNJ0M8GHHQ4q",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/9ddea4d626e3d1efb3737ffec14701ab2282f54c",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/5ff53fa219823e925a2e0fdb997584591f6fcbe9",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/aebb05312a719c5c808bee7812bdf24f99cbb3fe",
+                "width" : 64
+              } ],
+              "name" : "The StingRays",
+              "popularity" : 10,
+              "type" : "artist",
+              "uri" : "spotify:artist:2qgmXBX4LOVNJ0M8GHHQ4q"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3ZXmmlVgfGsYuT6kMDIyKo"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 91
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/3ZXmmlVgfGsYuT6kMDIyKo",
+              "id" : "3ZXmmlVgfGsYuT6kMDIyKo",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/2f1150677027a41c1bd5c15cdf0b1a1ac8151b40",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/e5fc11dc6e2a49cab38a6ac827e0a102d12036d1",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/798fccec12f721f1166924dccd4bf69d276ccab6",
+                "width" : 64
+              } ],
+              "name" : "The Sting-Rays",
+              "popularity" : 7,
+              "type" : "artist",
+              "uri" : "spotify:artist:3ZXmmlVgfGsYuT6kMDIyKo"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/7FVXXP3lzthrIXUZKi0lPG"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 171
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/7FVXXP3lzthrIXUZKi0lPG",
+              "id" : "7FVXXP3lzthrIXUZKi0lPG",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/086d4caec0e109c5697ef81b19f6e17d9ceb9c86",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/741d309f5ec7be06cacc07437c61ace1483c4ef7",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/380ca9beafa8064cea98ac4fdf32a09ec9898f42",
+                "width" : 64
+              } ],
+              "name" : "Stingray",
+              "popularity" : 18,
+              "type" : "artist",
+              "uri" : "spotify:artist:7FVXXP3lzthrIXUZKi0lPG"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/7vZgYqMEApgWpMpXMSJj1o"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 367
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/7vZgYqMEApgWpMpXMSJj1o",
+              "id" : "7vZgYqMEApgWpMpXMSJj1o",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/846f0903328647db08876cc7559b4485474f48f6",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/c2f5f3d164c386cfb6acbc629b19be9b1ce4468c",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/7a7e7e2896ca52488ccf66c5b6d634ce1a81ba30",
+                "width" : 64
+              } ],
+              "name" : "DJ Stingray",
+              "popularity" : 8,
+              "type" : "artist",
+              "uri" : "spotify:artist:7vZgYqMEApgWpMpXMSJj1o"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/7CEQvBZQV8ZISDZ3cfGUDu"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 64
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/7CEQvBZQV8ZISDZ3cfGUDu",
+              "id" : "7CEQvBZQV8ZISDZ3cfGUDu",
+              "images" : [ ],
+              "name" : "The Red Light Sting",
+              "popularity" : 1,
+              "type" : "artist",
+              "uri" : "spotify:artist:7CEQvBZQV8ZISDZ3cfGUDu"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/20hr3YTE5rTMjtcXBXpWnW"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 64
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/20hr3YTE5rTMjtcXBXpWnW",
+              "id" : "20hr3YTE5rTMjtcXBXpWnW",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/94437935962f24ed8598c22e56b6d8ac9af81f3a",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/95578c5d6b038b2a55a652c821e3d39ac8bfc712",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/3ed03529569834e9b96e9d3cfc6fc568a560233d",
+                "width" : 64
+              } ],
+              "name" : "Stingray313",
+              "popularity" : 7,
+              "type" : "artist",
+              "uri" : "spotify:artist:20hr3YTE5rTMjtcXBXpWnW"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3fmwpWRwGkgVkXTqsygeyr"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 921
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/3fmwpWRwGkgVkXTqsygeyr",
+              "id" : "3fmwpWRwGkgVkXTqsygeyr",
+              "images" : [ {
+                "height" : 555,
+                "url" : "https://i.scdn.co/image/8e4191d6a029ccc452e0a26aeb0f5c94323e777d",
+                "width" : 640
+              }, {
+                "height" : 260,
+                "url" : "https://i.scdn.co/image/518d2a87e7951c2078e2fd989cf3b391e2ecd275",
+                "width" : 300
+              }, {
+                "height" : 56,
+                "url" : "https://i.scdn.co/image/fe6b627930fc6581c33c5dfa99eb0ead1d99ea62",
+                "width" : 64
+              } ],
+              "name" : "Stings",
+              "popularity" : 32,
+              "type" : "artist",
+              "uri" : "spotify:artist:3fmwpWRwGkgVkXTqsygeyr"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/3bLol3mD89WuxOLEvqlRmG"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 16
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/3bLol3mD89WuxOLEvqlRmG",
+              "id" : "3bLol3mD89WuxOLEvqlRmG",
+              "images" : [ ],
+              "name" : "Anton Stingl",
+              "popularity" : 4,
+              "type" : "artist",
+              "uri" : "spotify:artist:3bLol3mD89WuxOLEvqlRmG"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/0i5kdjVFm7WDWK8NG67N1A"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 17
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/0i5kdjVFm7WDWK8NG67N1A",
+              "id" : "0i5kdjVFm7WDWK8NG67N1A",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/5939c9cc75f42b06bf1d7960d5c6e2689377b6ba",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/d22080ff0a71424d529feb48e911e0070c55437e",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/aad97ce34d74e21c2689a78f6e2784a6dd79a3cc",
+                "width" : 64
+              } ],
+              "name" : "Stinger",
+              "popularity" : 4,
+              "type" : "artist",
+              "uri" : "spotify:artist:0i5kdjVFm7WDWK8NG67N1A"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/5xQ85HEADKMAELObr2JauY"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 11
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/5xQ85HEADKMAELObr2JauY",
+              "id" : "5xQ85HEADKMAELObr2JauY",
+              "images" : [ ],
+              "name" : "Byron Stingly",
+              "popularity" : 3,
+              "type" : "artist",
+              "uri" : "spotify:artist:5xQ85HEADKMAELObr2JauY"
+            }, {
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/artist/25uSG5kkmxzLFSGy7qsHYe"
+              },
+              "followers" : {
+                "href" : null,
+                "total" : 256
+              },
+              "genres" : [ ],
+              "href" : "https://api.spotify.com/v1/artists/25uSG5kkmxzLFSGy7qsHYe",
+              "id" : "25uSG5kkmxzLFSGy7qsHYe",
+              "images" : [ {
+                "height" : 640,
+                "url" : "https://i.scdn.co/image/01a65062e3bb852a674faf88d2b66d421bb4a959",
+                "width" : 640
+              }, {
+                "height" : 300,
+                "url" : "https://i.scdn.co/image/6a0aa8c8060d0503cd9dce45160eec81ba26146f",
+                "width" : 300
+              }, {
+                "height" : 64,
+                "url" : "https://i.scdn.co/image/c7cbc26d04fcda0221ee6f4fe825f5267a33d7a4",
+                "width" : 64
+              } ],
+              "name" : "Fritz Stingl",
+              "popularity" : 23,
+              "type" : "artist",
+              "uri" : "spotify:artist:25uSG5kkmxzLFSGy7qsHYe"
+            } ],
+            "limit" : 20,
+            "next" : "https://api.spotify.com/v1/search?query=Sting&offset=20&limit=20&type=artist",
+            "offset" : 0,
+            "previous" : null,
+            "total" : 198
+          }
+        }
+    http_version: 
+  recorded_at: Thu, 28 Apr 2016 15:57:17 GMT
+- request:
+    method: get
+    uri: http://api.bandsintown.com/artists/Sting/events/search.json?api_version=2.0&app_id=making_the_band&location=39.7392,%20-104.9903&radius=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 28 Apr 2016 15:57:17 GMT
+      Etag:
+      - '"b618cdbdbb8e84664e288c4a9e22bd37"'
+      Server:
+      - nginx
+      X-Runtime:
+      - '16'
+      Content-Length:
+      - '1531'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |
+        [{"id":11253417,"title":"Sting @ Pepsi Center in Denver, CO","datetime":"2016-07-12T20:00:00","formatted_datetime":"Tuesday, July 12, 2016 at 8:00PM","formatted_location":"Denver, CO","ticket_url":"http://www.bandsintown.com/event/11253417/buy_tickets?app_id=making_the_band\u0026artist=Sting\u0026came_from=67","ticket_type":"Tickets","ticket_status":"available","on_sale_datetime":"2016-01-20T18:18:00","facebook_rsvp_url":"http://www.bandsintown.com/event/11253417?app_id=making_the_band\u0026artist=Sting\u0026came_from=67","description":"Two of music\u2019s most iconic artists \u2013 Sting and Peter Gabriel - will unite this summer for a once in a lifetime concert tour. Having first toured together in the eighties for Amnesty International, Rock Paper Scissors will find Peter Gabriel and Sting performing both separately and together, playing their own songs as well as melding their bands to explore each other\u2019s most celebrated hits.","artists":[{"name":"Sting","mbid":"7944ed53-2a58-4035-9b93-140a71e41c34","image_url":"https://s3.amazonaws.com/bit-photos/large/5838728.jpeg","thumb_url":"https://s3.amazonaws.com/bit-photos/thumb/5838728.jpeg","facebook_tour_dates_url":"http://www.bandsintown.com/Sting/facebookapp?came_from=67","facebook_page_url":"https://www.facebook.com/sting","tracker_count":446173,"url":"Sting","website":"http://www.sting.com"}],"venue":{"name":"Pepsi Center","place":"Pepsi Center","city":"Denver","region":"CO","country":"United States","latitude":39.74894,"longitude":-105.007643}}]
+    http_version: 
+  recorded_at: Thu, 28 Apr 2016 15:57:17 GMT
+recorded_with: VCR 3.0.1

@@ -15,7 +15,6 @@ class User < ActiveRecord::Base
   geocoded_by :location
   after_validation :geocode
 
-
   def self.from_omniauth(auth_info, location)
     where(uid: auth_info[:uid]).first_or_create do |new_user|
       new_user.uid           = auth_info.uid
