@@ -20,7 +20,6 @@ $( document).ready(function() {
     interval: 2500
   })
 
-
   $('.locationIcon').click(function(){
     navigator.geolocation.getCurrentPosition(sendLocation);
 
@@ -34,9 +33,10 @@ $( document).ready(function() {
     event.preventDefault();
       var location = $('#location').val()
       $('#locationModal').modal('toggle');
+
       $('.dashboard-container').hide();
       $('.spinner').show();
-
+      $('.update-location').show();
       var user = $.ajax( {
         url: "/api/location/1",
         type: 'PATCH',
@@ -53,6 +53,7 @@ $( document).ready(function() {
 
       $(document).ajaxStop(function(){
         $('.spinner').hide();
+        $('.update-location').hide();
         $('.dashboard-container').show();
       });
   });

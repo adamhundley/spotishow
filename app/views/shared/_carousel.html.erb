@@ -9,32 +9,37 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-        <img src="<%= asset_path( 'backgrounds/headphones.jpeg' ) %>" alt="...">
+      <div class="fill">
+        <img class="fill" src="<%= asset_path( 'backgrounds/headphones.jpeg' ) %>" alt="...">
+      </div>
       <div class="carousel-caption">
         <%= render partial: "shared/welcome_spinner" %>
-        <h1 class="slides-caption">Customized concert list based on your top artists on spotofy</h1><br>
+        <h1 class="slides-caption">Welcome to Spotishow</h1><br>
         <div class="row">
           <%= link_to image_tag("spotify-login.png", id:"login-button"), :spotify_login, id: "login-button-1", class: "login-button" %>
         </div>
       </div>
     </div>
     <div class="item">
-      <img src="<%= asset_path( 'backgrounds/record_player.jpg' ) %>" alt="...">
+      <div class="fill">
+      <img class="fill" src="<%= asset_path( 'backgrounds/record_player.jpg' ) %>" alt="...">
+    </div>
       <div class="carousel-caption">
         <%= render partial: "shared/welcome_spinner" %>
-        <h1 class="slides-caption">Customized concert list based on your top artists on spotofy</h1><br>
+        <h1 class="slides-caption">We give customized a concert list based on your top artists on Spotify</h1><br>
         <%= render partial: "shared/spotify_login" %>
       </div>
     </div>
     <div class="item">
-      <img src="<%= asset_path( 'backgrounds/tv_amp_stack.jpeg' ) %>" alt="...">
+      <div class="fill">
+      <img class="fill" src="<%= asset_path( 'backgrounds/records.jpeg' ) %>" alt="...">
+    </div>
       <div class="carousel-caption">
         <%= render partial: "shared/welcome_spinner" %>
-        <h1 class="slides-caption">Customized concert list based on your top artists on spotofy</h1><br>
+        <h1 class="slides-caption">Share your location and we'll do the rest</h1><br>
         <%= render partial: "shared/spotify_login" %>
       </div>
     </div>
-    ...
   </div>
 
   <!-- Controls -->

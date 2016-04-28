@@ -1,4 +1,5 @@
 <div class="artist-dashboard-background">
+  <h1 class="update-location text-center" style="display:none">Building new shows for your new location</h1>
   <div class="container dashboard-container">
     <div class="row">
       <div class="col-md-4 text-center dashboard" id="my-artists">
@@ -9,7 +10,6 @@
           odometer.innerHTML = <%= current_user.artists.count %>;
         }, 500);
         </script>
-
       </div>
     </div>
     <div class="row">
@@ -28,7 +28,6 @@
         <span class="dashboard-text">location:</span><br>
         <span class="dashboard-text" id="dashboardLocation">
           <%= current_user.location.upcase if current_user.location %></span><br><br>
-          <!-- <%= link_to image_tag("update-location.png", class:"locationIcon"), "#"%> -->
       </div>
     </div>
     <div class="row">
