@@ -3,6 +3,7 @@ $( document).ready(function() {
   $(document).on('click', '.artist-tour', function(){
     var artist = $(this).attr('data-artist')
     var id = $(this).attr('data-id')
+    $("#show-modal-body-"+id+"").empty();
     $('.modal-spinner').show().delay(2000);
 
     $.getJSON("/api/artists/"+artist+"", function(data){
