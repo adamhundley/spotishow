@@ -1,4 +1,12 @@
 $( document).ready(function() {
+  $(function(){
+    $('.artists-body').css({ height: $(window).innerHeight() - 270 });
+
+    $(window).resize(function(){
+
+    $('.artists-body').css({ height:    $(window).innerHeight() - 270 });
+  });
+});
 
   $(document).on('click', '.artist-tour', function(){
     var artist = $(this).attr('data-artist')

@@ -24,6 +24,7 @@
         <h1 class="artists-header-text">Below are your tracked artists. Add an artist above.</h1>
       </div>
       <% cache "artists-#{current_user.artists.count}-#{Artist.maximum(:updated_at)}" do %>
+
       <tbody class="artists-body">
         <% @artists.each do |artist| %>
           <div id="artist-<%= artist.id %>">
