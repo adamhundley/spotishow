@@ -73,8 +73,7 @@ thead th {
 }
 
 tbody.shows-body {
-    height: 650px;
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 .modal {
@@ -112,12 +111,6 @@ tbody td.show-tickets, thead th.show-tickets {
   float: left;
 }
 
-@media (max-width: 1200px) {
-  tbody.shows-body {
-      height: 625px;
-      overflow-y: auto;
-  }
-}
 
 @media (max-width: 770px) {
   .search-bar {
@@ -130,19 +123,9 @@ tbody td.show-tickets, thead th.show-tickets {
   .shows {
     font-size: 1.2em;
   }
-
-  tbody.shows-body {
-      height: 550px;
-      overflow-y: auto;
-  }
 }
 
 @media (max-width: 425px) {
-  tbody.shows-body {
-      height: 510px;
-      overflow-y: auto;
-  }
-
   .shows {
     font-size: 1em;
   }
@@ -165,9 +148,4 @@ tbody td.show-tickets, thead th.show-tickets {
     height: 15px;
     width: auto;
   }
-  tbody.shows-body {
-      height: 330px;
-      overflow-y: auto;
-
-    }
 }

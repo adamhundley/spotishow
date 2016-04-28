@@ -21,7 +21,6 @@ thead th {
 }
 
 tbody.artists-body {
-    height: 650px;
     overflow-y: auto;
 }
 
@@ -52,13 +51,6 @@ tbody td.spotify, thead th.spotify {
 tbody td.artist-untrack, thead th.artist-untrack {
   width: 10%;
   float: left;
-}
-
-@media (max-width: 1200px) {
-  tbody.artists-body {
-      height: 550px;
-      overflow-y: auto;
-  }
 }
 
 @media (max-width: 770px) {
@@ -93,11 +85,6 @@ tbody td.artist-untrack, thead th.artist-untrack {
     width: auto;
   }
 
-  tbody.artists-body {
-      height: 600px;
-      overflow-y: auto;
-  }
-
   tbody td.artist-name, thead th.artist-name {
     width: 60%;
     float: left;
@@ -122,22 +109,12 @@ tbody td.artist-untrack, thead th.artist-untrack {
   }
 }
 
-@media (max-width: 375px) {
-  tbody.artists-body {
-      height: 430px;
-      overflow-y: auto;
-  }
-}
 
 @media (max-width: 320px) {
   .artist-name-text {
     font-size: .5em;
   }
 
-  tbody.artists-body {
-      height: 330px;
-      overflow-y: auto;
-  }
   .untrack {
     height: 20px;
     width: auto;
