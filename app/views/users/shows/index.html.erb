@@ -4,6 +4,7 @@
       <div class="row text-center shows-header">
         <h1 class="shows-header-text">Upcoming Shows</h1>
       </div>
+      <% cache "shows-#{current_user.shows.count}-#{Show.maximum(:updated_at)}" do %>
       <tbody class="shows-body">
         <% @shows.each do |show| %>
             <tr class="shows" id="show-<%= show.id %>">
@@ -16,6 +17,7 @@
             </tr>
         <% end %>
       </tbody>
+      <% end %>
     </table>
   </div>
 </div>
