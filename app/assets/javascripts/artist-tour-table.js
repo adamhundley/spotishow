@@ -1,14 +1,18 @@
 $( document).ready(function() {
 
-  $(document).one('click', '.artist-tour', function(){
+  $(document).on('click', '.artist-tour', function(){
     var artist = $(this).attr('data-artist')
     var id = $(this).attr('data-id')
     $('.modal-spinner').show().delay(2000);
 
     $.getJSON("/api/artists/"+artist+"", function(data){
+      if (data.length === 0 ) {
+        $("#show-modal-body-"+id+"").append("<h2>...No upcoming shows...</h2>")
+      } else {
       $.each(data, function(key, show) {
         renderShowRow(show);
-    });
+      });
+    }
   })
 
   var renderShowRow = function(show) {
