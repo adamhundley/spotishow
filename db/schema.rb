@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160424225018) do
+ActiveRecord::Schema.define(version: 20160428224936) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "citext"
 
   create_table "artists", force: :cascade do |t|
-    t.string   "name"
+    t.citext   "name"
     t.string   "spotify_id"
     t.string   "spotify_uri"
     t.integer  "spotify_popularity"
