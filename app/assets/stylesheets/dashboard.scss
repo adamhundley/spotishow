@@ -1,36 +1,32 @@
-.locationIcon {
-  width: 60px;
-  height: auto;
-}
 
 .dashboard-text {
   color: white;
-  font-size: 2.5em;
+  font-size: 4.5em;
 }
 .odometer {
-    font-size: 75px;
+    font-size: 6em;
     color: white;
 }
 
-.update-location {
-  margin-top: 200px;
-}
-.artist-dashboard-background {
-  background-image:
-  image-url('backgrounds/cassette');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height:100%;
-  margin-top: -105px;
-  position: absolute;;
-}
-
-.dashboard-container {
-  margin-top: 175px;
+#dashboardLocation {
+  font-size: 3.5em;
 }
 
 .dashboard {
   background-color: rgba(0,0,0, .5);
+}
+
+@media (max-width: 770px) {
+  .dashboard-text {
+    color: white;
+    font-size: 3.5em;
+  }
+  .odometer {
+      font-size: 4em;
+      color: white;
+  }
+  #dashboardLocation {
+    font-size: 2.5em;
+  }
+
 }
