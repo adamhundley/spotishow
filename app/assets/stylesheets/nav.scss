@@ -1,15 +1,23 @@
 .logo-img {
   width: 55px;
   height: auto;
-  margin-bottom: 10%;
-  margin-top: 10%;
 }
 
+
+.navbar {
+  background-color: rgba(0,0,0, .7);
+  z-index: 1;
+  border: none;
+}
+
+.navbar-header {
+  margin-top: 10px;
+  height: 60px;
+}
 .current-user-image {
   width: 55px;
   height: auto;
   border-radius: 50%;
-  margin-top: 7%;
 }
 
 .current-user-dropdown {
@@ -27,7 +35,7 @@
 }
 
 .menu-item {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 20px;
   font-family: sans-serif;
@@ -40,7 +48,8 @@
 
 .glyphicon {
   margin-left: 5px;
-  font-size: 1.5em;
+  font-size: 2.5em;
+  color: white;
 }
 
 .user-name {
@@ -50,15 +59,13 @@
 }
 
 .biz-name{
+  // margin-top: 25px;
   color: white;
-  font-size: 1.5em;
+  font-size: 3.5em;
 }
 
-.caret {
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid white;
-}
+
+
 
 @media (max-width: 770px) {
   .biz-name{

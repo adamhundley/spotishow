@@ -1,8 +1,35 @@
-<nav role="navigation container" class="navbar navbar-default custom-navbar">
+<div class="navbar navbar-default navbar-fat navbar-clean">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar b1"></span>
+        <span class="icon-bar b2"></span>
+        <span class="icon-bar b3"></span>
+      </button>
+      <a class="logo-link" href="<%= user_dashboard_path(current_user.uid) %>"><%= image_tag("logo.png", class:"logo-img") %></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="text-center">
+          <a href="/<%= current_user.uid %>/artists" class=" menu-item icon" id="my-artists">
+          <span class="glyphicon glyphicon-headphones" aria-hidden="true"></a>
+        </li>
+        <li class="text-center">
+          <a href="/<%= current_user.uid %>/shows" class=" menu-item icon" id="my-shows">
+          <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+        </li>
+        <li class="text-center">
+          <a href="/logout" data-method="DELETE" class="menu-item icon">
+          <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a>
+        </li>
+        <li class="text-center"><%= link_to image_tag(current_user.image, class:"current-user-image"), user_dashboard_path(current_user.uid), class: "menu-item" %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- <nav role="navigation container" class="navbar navbar-default custom-navbar">
   <div class="nav-container container">
     <div class="navbar-header pull-left">
-      <span><a class="logo-link" href="<%= user_dashboard_path(current_user.uid) %>"><%= image_tag("logo.png", class:"logo-img") %><span class="biz-name">
-      Spotishow</span></a></span>
     </div>
 
     <div class="navbar-nav pull-right" id="navbar">
@@ -33,4 +60,4 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
