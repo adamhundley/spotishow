@@ -3,18 +3,18 @@
 <head>
   <%= favicon_link_tag 'logo.png' %>
   <title>Spotishow</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= stylesheet_link_tag  'application', media: 'all' %>
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="../../style/addtohomescreen.css">
-  <script src="../../src/addtohomescreen.js"></script>
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <script src="https://cdn.rawgit.com/cubiq/add-to-homescreen/master/src/addtohomescreen.js"></script>
   <script>
   addToHomescreen({
-    startDelay: 3,
+    icon: true,
+    message: "To add Spotishow to your homescreen: tap %icon and then <strong>Add to Homescreen</strong>",
+    lifespan: 10,
     maxDisplayCount: 1,
-    debug: true
   });
   </script>
 
