@@ -1,1 +1,51 @@
-<%= render partial: "shared/carousel" %>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="fill">
+      </div>
+      <div class="carousel-caption">
+        <%= render partial: "shared/welcome_spinner" %>
+        <h1 class="slides-caption">Welcome to Spotishow</h1><br>
+        <div class="row">
+          <%= link_to image_tag("spotify-login.png", id:"login-button"), :spotify_login, id: "login-button-1", class: "login-button" %>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill">
+    </div>
+      <div class="carousel-caption">
+        <%= render partial: "shared/welcome_spinner" %>
+        <h1 class="slides-caption">We give customized a concert list based on your top artists on Spotify</h1><br>
+        <%= render partial: "shared/spotify_login" %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="fill">
+    </div>
+      <div class="carousel-caption">
+        <%= render partial: "shared/welcome_spinner" %>
+        <h1 class="slides-caption">Share your location and we'll do the rest</h1><br>
+        <%= render partial: "shared/spotify_login" %>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
