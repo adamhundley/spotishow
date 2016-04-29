@@ -25,6 +25,7 @@ $( document).ready(function() {
       $(document).ajaxStop(function(){
         $('.search-bar').show();
         $(".spinner").hide();
+        $("#name").val();
       });
 
   });
