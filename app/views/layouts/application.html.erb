@@ -8,6 +8,17 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" type="text/css" href="../../style/addtohomescreen.css">
+  <script src="../../src/addtohomescreen.js"></script>
+  <script>
+  addToHomescreen({
+    skipFirstVisit: true,
+    startDelay: 3,
+    maxDisplayCount: 1,
+    debug: true
+  });
+  </script>
+
   <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
   <script src="http://github.hubspot.com/odometer/odometer.js"></script>
   <style media="screen">

@@ -35,11 +35,4 @@ $(document).ready(function() {
         }
     }
 
-    $('.locationIcon').click(function(){
-      navigator.geolocation.getCurrentPosition(sendLocation);
-
-      function sendLocation(position) {
-        $.post('/api/location', {lat:position.coords.latitude, lng:position.coords.longitude});
-      }
-    });
 })
