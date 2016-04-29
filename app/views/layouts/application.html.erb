@@ -7,11 +7,17 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon.png" />
 
+  <link rel="stylesheet" type="text/css" href="../../style/addtohomescreen.css">
+  <script src="../../src/addtohomescreen.js"></script>
+  <script>
+  addToHomescreen({
+    skipFirstVisit: true,
+    startDelay: 3,
+    maxDisplayCount: 1,
+    debug: true
+  });
+  </script>
 
   <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
   <script src="http://github.hubspot.com/odometer/odometer.js"></script>
