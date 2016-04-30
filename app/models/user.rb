@@ -32,6 +32,12 @@ class User < ActiveRecord::Base
     end
   end
 
+  def has_location?
+    if self.location.nil?
+      reverse_geocode
+    end
+  end
+
   def update_token
     new_token = SpotifyService.new.request_new_token(self)[:access_token]
     update_attribute(:token, new_token)
