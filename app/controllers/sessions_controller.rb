@@ -2,7 +2,6 @@ class SessionsController < ApplicationController
   def create
     user = User.from_omniauth(request.env["omniauth.auth"], location)
     user.has_location?
-    
     user.update_token
     session[:uid] = user.uid
     redirect_to user_dashboard_path(current_user.uid)

@@ -7,7 +7,11 @@ $( document).ready(function() {
       var id = $(this).attr('data-id')
 
       var artist = $.post( "/api/artists", { name:   $('#name').val()}, function(data) {
-        addArtistToTable(artist.responseJSON);
+        if(artist.responseJSON !== null) {
+          addArtistToTable(artist.responseJSON);
+        } else {
+          
+        }
       });
 
       var addArtistToTable = function(artist) {

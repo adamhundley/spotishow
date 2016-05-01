@@ -1,17 +1,17 @@
 module Api
   class Artists::ArtistsController < ApiController
     def create
-      find_artist(params[:name], current_user)
-      render json: Artist.find_by(name: params[:name])
+      find_artist(artist_name, current_user)
+      render json: Artist.find_by(name: artist_name)
     end
 
     def destroy
-      if current_user.shows.find_by(artist_id: params[:id]) != nil
-        show = current_user.shows.find_by(artist_id: params[:id])
+      if current_user.shows.find_by(artist_id: artist_id) != nil
+        show = current_user.shows.find_by(artist_id: artist_id)
         current_user.shows.delete(show.id)
-        current_user.artists.delete(params[:id])
+        current_user.artists.delete(artist_id)
       else
-        current_user.artists.delete(params[:id])
+        current_user.artists.delete(artist_id)
       end
       head :no_content
     end

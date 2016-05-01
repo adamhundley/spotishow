@@ -1,23 +1,20 @@
-<div class="">
-  <div class="container show-table">
-    <table class="table shows-table">
-      <div class="row text-center shows-header">
-        <h1 class="shows-header-text">Upcoming Shows</h1>
-      </div>
-      <% cache "shows-#{current_user.shows.count}-#{current_user.shows.first.title}" do %>
+<div class="container show-table">
+  <table class="table shows-table">
+    <div class="row text-center shows-header">
+      <h1 class="shows-header-text">Upcoming Shows</h1>
+    </div>
+    <% cache "shows-#{current_user.shows.count}-#{current_user.shows.first.title}" do %>
       <tbody class="shows-body">
         <% @shows.each do |show| %>
-            <tr class="shows" id="show-<%= show.id %>">
-              <td class="shows show-date"><%= show.datetime.month %>/<%= show.datetime.day %></td>
-              <td class="shows show-artist"><%= show.artist_name %></td>
-              <td class="shows show-venue"><%= show.venue_name %></td>
-              <td class="shows show-location"><%= show.formatted_location %></td>
-              <td class="shows show-tickets"><%= link_to image_tag("ticket.png", class:"ticket"), show.ticket_url, {target: "_blank"} %>
-              </td>
-            </tr>
+          <tr class="shows" id="show-<%= show.id %>">
+            <td class="shows show-date"><%= show.datetime.month %>/<%= show.datetime.day %></td>
+            <td class="shows show-artist"><%= show.artist_name %></td>
+            <td class="shows show-venue"><%= show.venue_name %></td>
+            <td class="shows show-location"><%= show.formatted_location %></td>
+            <td class="shows show-tickets"><%= link_to image_tag("ticket.png", class:"ticket"), show.ticket_url, {target: "_blank"} %></td>
+          </tr>
         <% end %>
       </tbody>
-      <% end %>
-    </table>
-  </div>
+    <% end %>
+  </table>
 </div>
